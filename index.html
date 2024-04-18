@@ -12,16 +12,41 @@
   </head>
 
   <body>
-    <div class="container">
-      <header class="header">
-        <div>img</div>
-        <div>
-          <div>nav</div>
-          <div>button</div>
+    <header class="header">
+      <div class="container header__container">
+        <a href="https://smartsender.com"
+          ><svg class="header__logo">
+            <use href="./images/svg/sprite.svg#logo"></use></svg
+        ></a>
+
+        <div class="header__wrapper">
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#" class="header__link">Подключение</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Возможности</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Секреты</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">FAQ</a>
+              </li>
+            </ul>
+          </nav>
+
+          <button
+            type="button"
+            class="contact-button"
+            data-text="Связаться с нами"
+          >
+            Связаться с нами
+          </button>
         </div>
-      </header>
-    </div>
-    <div class="background"></div>
+      </div>
+    </header>
 
     <section class="section" id="section-about">
       <div class="container"></div>
@@ -30,7 +55,7 @@
     <footer class="footer">
       <div class="container"></div>
     </footer>
-
+    <div class="background"></div>
     <script type="module" src="./index.js"></script>
   </body>
 </html>
