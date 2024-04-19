@@ -1,0 +1,27 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__image {
+    width: 828px;
+    height: 751px;
+  }
+  &__wrapper {
+  }
+  &__text {
+    font-weight: 600;
+    font-size: 40px;
+    color: $main-text;
+    margin-bottom: 75px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    color: $main-text;
+    margin-bottom: 20px;
+  }
+  &__span {
+    font-weight: 800;
+    color: $span-text;
+  }
+}

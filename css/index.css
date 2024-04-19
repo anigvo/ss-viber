@@ -65,7 +65,7 @@ body {
   top: 0;
   left: 0;
   width: 70%;
-  height: 1700px;
+  height: 889px;
   margin-left: 30%;
   background-image: url("../../images/svg/hero-background.svg");
   background-size: cover;
@@ -130,6 +130,35 @@ ul {
   width: 151px;
   height: 60px;
 }
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+.header__button {
+  margin-left: 65px;
+}
+.header__link {
+  padding: 31px 0;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 14px;
+  color: #ffffff;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__link:hover, .header__link:focus {
+  color: rgba(0, 0, 0, 0.368627451);
+}
 
 .container {
   padding: 0px 25px;
@@ -143,56 +172,130 @@ ul {
   }
 }
 .contact-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  fill: currentColor;
   position: relative;
+  z-index: 1;
   font-family: "Montserrat";
   font-weight: 600;
   font-size: 18px;
   color: #ffffff;
   width: 340px;
   height: 80px;
-  padding: 29px 76px;
+  padding: 30px 0;
   border-radius: 8px;
   border: none;
+  text-align: center;
   text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.368627451);
   -webkit-box-shadow: 0 30px 32px rgba(255, 134, 47, 0.5411764706);
           box-shadow: 0 30px 32px rgba(255, 134, 47, 0.5411764706);
   cursor: pointer;
   background-image: -webkit-gradient(linear, left top, right top, from(#fb5d02), to(#ffad69));
   background-image: linear-gradient(to right, #fb5d02, #ffad69);
-  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-size: 100%;
+  -webkit-transition: background-position 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-position 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-position 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-position 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-button:hover, .contact-button:focus {
   -webkit-box-shadow: 0 10px 32px rgba(255, 134, 47, 0.5411764706);
           box-shadow: 0 10px 32px rgba(255, 134, 47, 0.5411764706);
 }
+.contact-button__icon {
+  width: 22px;
+  height: 22px;
+  margin-left: 35px;
+}
+.contact-button--secondary {
+  background-image: -webkit-gradient(linear, left top, right top, from(#1380f6), to(#7860f2));
+  background-image: linear-gradient(to right, #1380f6, #7860f2);
+  -webkit-box-shadow: 0 30px 32px rgba(120, 96, 242, 0.3490196078);
+          box-shadow: 0 30px 32px rgba(120, 96, 242, 0.3490196078);
+}
+.contact-button--secondary:hover, .contact-button--secondary:focus {
+  -webkit-box-shadow: 0 10px 32px rgba(120, 96, 242, 0.3490196078);
+          box-shadow: 0 10px 32px rgba(120, 96, 242, 0.3490196078);
+}
 
 .contact-button::before {
-  content: attr(data-text);
+  content: "";
   position: absolute;
-  padding: 29px 76px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  font-family: "Montserrat";
-  font-weight: 600;
-  font-size: 18px;
-  color: #ffffff;
+  z-index: -1;
   background-image: -webkit-gradient(linear, left top, right top, from(#ff9457), to(#ffad69));
   background-image: linear-gradient(to right, #ff9457, #ffad69);
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
   border-radius: 8px;
   border: none;
-  opacity: 0;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-button:hover::before {
   opacity: 1;
+}
+
+.contact-button--secondary::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-image: -webkit-gradient(linear, left top, right top, from(#479fff), to(#9985ff));
+  background-image: linear-gradient(to right, #479fff, #9985ff);
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+  border-radius: 8px;
+  border: none;
+}
+
+.contact-button--secondary:hover::before {
+  opacity: 1;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.hero__image {
+  width: 828px;
+  height: 751px;
+}
+.hero__text {
+  font-weight: 600;
+  font-size: 40px;
+  color: #000000;
+  margin-bottom: 75px;
+}
+.hero__title {
+  font-weight: 700;
+  font-size: 48px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.hero__span {
+  font-weight: 800;
+  color: #7860f2;
 }/*# sourceMappingURL=index.css.map */
