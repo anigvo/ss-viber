@@ -44,35 +44,206 @@
       </div>
     </header>
 
-    <section class="section" id="section-about">
-      <div class="container hero">
-        <div class="hero__wrapper">
-          <h1 class="hero__title">
-            Коммерческие чат-боты в <span class="hero__span">Viber</span> —
-          </h1>
-          <p class="hero__text">умное решение для вашего бизнеса</p>
-          <button
-            type="button"
-            class="contact-button contact-button--secondary"
-          >
-            <span>Подать заявку сейчас</span>
-            <svg class="contact-button__icon">
-              <use href="./images/svg/sprite.svg#arrow"></use>
-            </svg>
-          </button>
-        </div>
-        <img src="./images/frames/girl.png" class="hero__image" alt="Rakuten" />
+    <div class="container hero">
+      <div class="hero__wrapper">
+        <h1 class="hero__title">
+          Коммерческие чат-боты в <span class="hero__span">Viber</span> —
+        </h1>
+        <p class="hero__text">умное решение для вашего бизнеса</p>
+        <button type="button" class="contact-button contact-button--secondary">
+          <span>Подать заявку сейчас</span>
+          <svg class="contact-button__icon">
+            <use href="./images/svg/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
+      <picture class="hero__image">
+        <source
+          srcset="./images/frames/girl.png 1x, ./images/frames/girl@2x.png 2x"
+          type="image/png"
+        />
+
+        <img src="./images/frames/girl.png" alt="Girl with phone" />
+      </picture>
+    </div>
+
+    <section class="section container">
+      <div class="section__about">
+        <p class="section__text section__text--margin">
+          <span class="section__text--span">Viber</span> предоставляет удобную и
+          мощную платформу для взаимодействия с пользователями по всему миру.
+        </p>
+        <p class="section__text">
+          <span class="section__text--span">Коммерческие чат-боты в Viber</span>
+          — незаменимый инструмент для бизнеса, позволяющий автоматизировать
+          рутинные процессы. Они обеспечивают персонализированные коммуникации,
+          мгновенное реагирование на запросы пользователей и круглосуточную
+          поддержку. Начните зарабатывать при помощи коммерческой модели
+          чат-ботов прямо сейчас!
+        </p>
+        <picture class="section__img section__img--viber">
+          <source
+            srcset="./images/Viber.png 1x, ./images/Viber@2x.png 2x"
+            type="image/png"
+          />
+          <img src="./images/Viber.png" alt="Viber" />
+        </picture>
+      </div>
+
+      <div class="section__clients">
+        <h2 class="section__title section__title--clients">
+          <span class="section__title--span">3 из 4 Клиентов</span>
+          предпочитают задавать вопросы компании в чате
+        </h2>
+        <p class="section__text">
+          Согласно новым правилам
+          <span class="section__text--span">Viber</span>, создать коммерческого
+          чат-бота можно только через официальных партнёров Rakuten Viber.
+        </p>
+        <ul class="section__list section__list--clients">
+          <li class="section__item section__item--clients">
+            <picture>
+              <source
+                srcset="
+                  ./images/clients/client1.png        1x,
+                  ./images/clients/client1.png@2x.png 2x
+                "
+                type="image/png"
+              />
+              <img src="./images/clients/client1.png" alt="Client 1" />
+            </picture>
+          </li>
+          <li class="section__item section__item--clients">
+            <picture>
+              <source
+                srcset="
+                  ./images/clients/client2.png        1x,
+                  ./images/clients/client2.png@2x.png 2x
+                "
+                type="image/png"
+              />
+              <img src="./images/clients/client2.png" alt="Client 2" />
+            </picture>
+          </li>
+          <li class="section__item section__item--clients">
+            <picture>
+              <source
+                srcset="
+                  ./images/clients/client3.png        1x,
+                  ./images/clients/client3.png@2x.png 2x
+                "
+                type="image/png"
+              />
+              <img src="./images/clients/client3.png" alt="Client 3" />
+            </picture>
+          </li>
+
+          <li class="section__item section__item--clients">
+            <picture>
+              <source
+                srcset="
+                  ./images/clients/client4.png        1x,
+                  ./images/clients/client4.png@2x.png 2x
+                "
+                type="image/png"
+              />
+              <img src="./images/clients/client4.png" alt="Client 4" />
+            </picture>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section>
-      <h2>TEXT</h2>
-      <p>TEXT2</p>
+    <section class="section container section--gray section--padding">
+      <div class="section__opportunities">
+        <h2 class="section__title">
+          Максимизируйте ваши возможности с
+          <span class="section__title--span">коммерческими чат-ботами</span>
+        </h2>
+        <p class="section__text section__text--margin">
+          <span class="section__text--span">Освободитесь от ограничений</span>
+          бесплатных чат-ботов в 10 000 сообщений в месяц. Переход на
+          коммерческий план откроет вам неограниченные возможности в общении с
+          клиентами
+        </p>
+        <p class="section__text">
+          <span class="section__text--span"
+            >Команда Smart Sender обеспечит поддержку</span
+          >
+          и экспертное руководство на каждом этапе. Не упускайте возможность
+          сделать больше для вашего бизнеса — переходите на коммерческие
+          чат-боты уже сегодня!
+        </p>
+      </div>
+      <picture class="section__img section__img--messenger">
+        <source
+          srcset="
+            ./images/frames/messenger-frame.png    1x,
+            ./images/frames/messenger-frame@2x.png 2x
+          "
+          type="image/png"
+        />
+
+        <img src="./images/frames/messenger-frame.png" alt="Messenger" />
+      </picture>
     </section>
 
-    <footer class="footer">
-      <div class="container"></div>
-    </footer>
+    <section class="section container">
+      <picture class="section__img section__img--phone">
+        <source
+          srcset="
+            ./images/frames/phone-frame.png    1x,
+            ./images/frames/phone-frame@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img src="./images/frames/phone-frame.png" alt="Phone and Viber app" />
+      </picture>
+      <div class="section__steps">
+        <h2 class="section__title section__title--steps">
+          <span class="section__title--span">Шаги подключения</span>
+          коммерческого чат-бота в Viber
+        </h2>
+        <ul class="section__list section__list--steps">
+          <li class="section__item section__item--steps section__item--active">
+            <p class="section__text">
+              <span class="section__text--span">Шаг 1. </span
+              ><a href="https://smartsender.com" class="section__link"
+                >Обратиться к Smart Sender</a
+              >
+              — официальному партнёру Viber.
+            </p>
+            <div class="section__icon"></div>
+          </li>
+
+          <li class="section__item section__item--steps">
+            <p class="section__text section__text--steps">
+              <span class="section__text--span">Шаг 2. </span>Оплатить
+              активационный взнос.
+            </p>
+          </li>
+          <li class="section__item section__item--steps">
+            <p class="section__text section__text--steps">
+              <span class="section__text--span">Шаг 3. </span>Заполнить анкету.
+            </p>
+          </li>
+          <li class="section__item section__item--steps">
+            <p class="section__text section__text--steps">
+              <span class="section__text--span">Шаг 4. </span>Ожидать активацию
+              бота.
+            </p>
+          </li>
+          <li class="section__item section__item--steps">
+            <p class="section__text section__text--steps">
+              <span class="section__text--span">Шаг 5. </span>Сделать апгрейд
+              своих воронок продаж для повышения эффективности бизнеса.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
     <div class="background"></div>
     <script type="module" src="./index.js"></script>
   </body>
