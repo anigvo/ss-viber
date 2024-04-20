@@ -1,0 +1,23 @@
+.banner {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-image: linear-gradient(
+    45deg,
+    $blue-violet-1 0%,
+    $blue-violet-2 25%,
+    $blue-violet-2 58%
+  );
+  &__title {
+    color: $secondary-text;
+    max-width: 1040px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
+    margin-bottom: 35px;
+    &--secondary {
+      text-transform: uppercase;
+      margin-bottom: 60px;
+    }
+  }
+}
