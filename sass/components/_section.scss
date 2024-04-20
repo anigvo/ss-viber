@@ -11,6 +11,11 @@
     padding-bottom: 0;
     padding-top: 0;
   }
+  &__link {
+    font-weight: 700;
+    color: $link-color;
+    text-decoration: underline;
+  }
   &__about {
     margin-right: 140px;
     position: relative;
