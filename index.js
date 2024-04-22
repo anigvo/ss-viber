@@ -44,16 +44,16 @@ const questions = [
 
 const questionList = document.querySelector(`.faq__list`);
 
-const questionItem = questions.map((question, index) => {
-  addQuestionToList(question, index);
+const questionItem = questions.map((question) => {
+  addQuestionToList(question);
 });
 
-function addQuestionToList({ title, text }, index) {
+function addQuestionToList({ title, text }) {
   questionList.insertAdjacentHTML(
     `beforeend`,
-    `<li id="${index}" class="faq__item">
+    `<li class="faq__item">
     <div class="faq__wrapper">
-      <h3 class="faq__title faq__title--secondary">
+      <h3 class="faq__title faq__title--secondary faq__title--margin">
         ${title}
       </h3>
         <img
@@ -82,11 +82,13 @@ faqItems.forEach((faqItem) => {
   const faqText = faqItem.querySelector(".faq__text");
   const imgUp = faqItem.querySelector("#up");
   const imgDown = faqItem.querySelector("#down");
+  const faqWrapper = faqItem.querySelector(".faq__wrapper");
 
   faqItem.addEventListener("click", () => {
     faqItem.classList.toggle("faq__item--active");
     imgUp.classList.toggle("visually-hidden");
     imgDown.classList.toggle("visually-hidden");
     faqText.classList.toggle("visually-hidden");
+    faqWrapper.classList.toggle("faq__wrapper--margin");
   });
 });

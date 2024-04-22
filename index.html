@@ -12,66 +12,71 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="container header__container">
-        <a href="https://smartsender.com" aria-label="SmartSender Logo"
-          ><svg class="header__logo">
-            <use href="./images/svg/sprite.svg#logo"></use></svg
-        ></a>
+    <div class="pre-background">
+      <div class="background"></div>
+      <header class="header">
+        <div class="container header__container">
+          <a href="https://smartsender.com" aria-label="SmartSender Logo"
+            ><svg class="header__logo">
+              <use href="./images/svg/sprite.svg#logo"></use></svg
+            ><svg class="header__logo-white">
+              <use href="./images/svg/sprite.svg#logo-white"></use></svg
+          ></a>
 
-        <div class="header__wrapper">
-          <nav class="header__nav">
-            <ul class="header__list">
-              <li class="header__item">
-                <a href="#steps" class="header__link">Подключение</a>
-              </li>
-              <li class="header__item">
-                <a href="#opportunity" class="header__link">Возможности</a>
-              </li>
-              <li class="header__item">
-                <a href="#secrets" class="header__link">Секреты</a>
-              </li>
-              <li class="header__item">
-                <a href="#faq" class="header__link">FAQ</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="header__wrapper">
+            <nav class="header__nav">
+              <ul class="header__list">
+                <li class="header__item">
+                  <a href="#steps" class="header__link">Подключение</a>
+                </li>
+                <li class="header__item">
+                  <a href="#opportunity" class="header__link">Возможности</a>
+                </li>
+                <li class="header__item">
+                  <a href="#secrets" class="header__link">Секреты</a>
+                </li>
+                <li class="header__item">
+                  <a href="#faq" class="header__link">FAQ</a>
+                </li>
+              </ul>
+            </nav>
+
+            <a
+              class="header__button contact-button contact-button--small"
+              target="_blank"
+              href="https://smartsender.com"
+              >Связаться с нами</a
+            >
+          </div>
+        </div>
+      </header>
+
+      <section class="hero container">
+        <div class="hero__wrapper">
+          <h1 class="hero__title">
+            Коммерческие чат-боты в <span class="hero__span">Viber</span> —
+          </h1>
+          <p class="hero__text">умное решение для вашего бизнеса</p>
 
           <a
-            class="header__button contact-button"
+            class="contact-button contact-button--secondary contact-button--small"
             target="_blank"
             href="https://smartsender.com"
-            >Связаться с нами</a
-          >
+            ><span>Подать заявку сейчас</span>
+            <svg class="contact-button__icon">
+              <use href="./images/svg/sprite.svg#arrow"></use></svg
+          ></a>
         </div>
-      </div>
-    </header>
+        <picture class="hero__image">
+          <source
+            srcset="./images/frames/girl.png 1x, ./images/frames/girl@2x.png 2x"
+            type="image/png"
+          />
 
-    <section class="hero container">
-      <div class="hero__wrapper">
-        <h1 class="hero__title">
-          Коммерческие чат-боты в <span class="hero__span">Viber</span> —
-        </h1>
-        <p class="hero__text">умное решение для вашего бизнеса</p>
-
-        <a
-          class="contact-button contact-button--secondary"
-          target="_blank"
-          href="https://smartsender.com"
-          ><span>Подать заявку сейчас</span>
-          <svg class="contact-button__icon">
-            <use href="./images/svg/sprite.svg#arrow"></use></svg
-        ></a>
-      </div>
-      <picture class="hero__image">
-        <source
-          srcset="./images/frames/girl.png 1x, ./images/frames/girl@2x.png 2x"
-          type="image/png"
-        />
-
-        <img src="./images/frames/girl.png" alt="Girl with phone" />
-      </picture>
-    </section>
+          <img src="./images/frames/girl.png" alt="Girl with phone" />
+        </picture>
+      </section>
+    </div>
 
     <section class="section container">
       <div class="section__about">
@@ -108,11 +113,11 @@
         </p>
         <ul class="section__list section__list--clients">
           <li class="section__item section__item--clients">
-            <picture>
+            <picture class="section__img--clients">
               <source
                 srcset="
-                  ./images/clients/client1.png        1x,
-                  ./images/clients/client1.png@2x.png 2x
+                  ./images/clients/client1.png    1x,
+                  ./images/clients/client1@2x.png 2x
                 "
                 type="image/png"
               />
@@ -120,11 +125,11 @@
             </picture>
           </li>
           <li class="section__item section__item--clients">
-            <picture>
+            <picture class="section__img--clients">
               <source
                 srcset="
-                  ./images/clients/client2.png        1x,
-                  ./images/clients/client2.png@2x.png 2x
+                  ./images/clients/client2.png    1x,
+                  ./images/clients/client2@2x.png 2x
                 "
                 type="image/png"
               />
@@ -132,11 +137,11 @@
             </picture>
           </li>
           <li class="section__item section__item--clients">
-            <picture>
+            <picture class="section__img--clients">
               <source
                 srcset="
-                  ./images/clients/client3.png        1x,
-                  ./images/clients/client3.png@2x.png 2x
+                  ./images/clients/client3.png    1x,
+                  ./images/clients/client3@2x.png 2x
                 "
                 type="image/png"
               />
@@ -145,11 +150,11 @@
           </li>
 
           <li class="section__item section__item--clients">
-            <picture>
+            <picture class="section__img--clients">
               <source
                 srcset="
-                  ./images/clients/client4.png        1x,
-                  ./images/clients/client4.png@2x.png 2x
+                  ./images/clients/client4.png    1x,
+                  ./images/clients/client4@2x.png 2x
                 "
                 type="image/png"
               />
@@ -304,9 +309,13 @@
 
       <ul class="section__list section__list--limitations">
         <li class="section__item section__item--limitations">
-          <h3 class="section__title section__title--secondary">
+          <h3
+            class="section__title section__title--secondary section__title--semibold"
+          >
             «Своими силами» подключить чат-бот в Viber
-            <span class="section__title--span">невозможно</span>
+            <span class="section__title--span section__title--semibold"
+              >невозможно</span
+            >
           </h3>
           <p class="section__text">
             Опция самостоятельного подключения чат-бота недоступна
@@ -323,9 +332,13 @@
         </li>
 
         <li class="section__item section__item--limitations">
-          <h3 class="section__title section__title--secondary">
+          <h3
+            class="section__title section__title--secondary section__title--semibold"
+          >
             В силу вступают новые
-            <span class="section__title--span">тарифы</span>
+            <span class="section__title--span section__title--semibold"
+              >тарифы</span
+            >
           </h3>
           <p class="section__text">
             Чтобы перейти на коммерческую модель чат-бота необходимо оплатить
@@ -341,9 +354,13 @@
           </picture>
         </li>
         <li class="section__item section__item--limitations">
-          <h3 class="section__title section__title--secondary">
+          <h3
+            class="section__title section__title--secondary section__title--semibold"
+          >
             Действует ограничение
-            <span class="section__title--span">по времени</span>
+            <span class="section__title--span section__title--semibold"
+              >по времени</span
+            >
           </h3>
           <p class="section__text">
             При начале диалога с чат-ботом или ответе на его сообщение
@@ -365,6 +382,26 @@
           </picture>
         </li>
       </ul>
+      <div class="section__wrapper--calendar-down">
+        <p class="section__text">
+          <span class="section__text--span">Smart Sender</span> — это быстрое
+          подключение чат-бота, квалифицированная техническая поддержка и
+          консультации в случае возникновения вопросов или проблем.
+        </p>
+        <picture class="section__img section__img--calendar-down">
+          <source
+            srcset="
+              ./images/frames/calendar-frame-down.png    1x,
+              ./images/frames/calendar-frame-down@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            src="./images/frames/phone-frame.png"
+            alt="Calendar with stripes"
+          />
+        </picture>
+      </div>
     </section>
 
     <section class="section container section__opportunity" id="opportunity">
@@ -450,25 +487,27 @@
     <section class="section container" id="secrets">
       <ul class="section__list section__list--secrets">
         <li class="section__item section__item--secrets section__item--first">
-          <h2 class="section__title section__title--secrets">
-            <span class="section__title--span section__title--semibold"
-              >Секреты эффективности</span
-            >
-            чат-ботов
-          </h2>
-          <picture class="section__img section__img--secrets">
-            <source
-              srcset="
-                ./images/frames/message-frame.png    1x,
-                ./images/frames/message-frame@2x.png 2x
-              "
-              type="image/png"
-            />
-            <img
-              src="./images/frames/phone-frame.png"
-              alt="Message with stripe"
-            />
-          </picture>
+          <div class="section__wrapper--secrets">
+            <h2 class="section__title section__title--secrets">
+              <span class="section__title--span section__title--semibold"
+                >Секреты эффективности</span
+              >
+              чат-ботов
+            </h2>
+            <picture class="section__img section__img--secrets">
+              <source
+                srcset="
+                  ./images/frames/message-frame.png    1x,
+                  ./images/frames/message-frame@2x.png 2x
+                "
+                type="image/png"
+              />
+              <img
+                src="./images/frames/phone-frame.png"
+                alt="Message with stripe"
+              />
+            </picture>
+          </div>
         </li>
 
         <li class="section__item section__item--secrets">
@@ -593,7 +632,6 @@
       >
     </section>
 
-    <div class="background"></div>
     <script type="module" src="./index.js"></script>
   </body>
 </html>

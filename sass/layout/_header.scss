@@ -1,17 +1,38 @@
 .header {
+  padding: 15px 0;
+  @media screen and (min-width: $laptop) {
+    padding: 30px 0;
+  }
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  padding: 30px 0;
   &__logo {
-    width: 151px;
-    height: 60px;
+    display: none;
+    @media screen and (min-width: $laptop) {
+      display: block;
+      width: 151px;
+      height: 60px;
+    }
+  }
+  &__logo-white {
+    display: block;
+    width: 75px;
+    height: 30px;
+    @media screen and (min-width: $laptop) {
+      display: none;
+    }
   }
   &__wrapper {
     display: flex;
     align-items: center;
+  }
+  &__nav {
+    display: none;
+    @media screen and (min-width: $laptop) {
+      display: block;
+    }
   }
   &__list {
     display: flex;

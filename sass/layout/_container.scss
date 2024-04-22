@@ -4,12 +4,15 @@
   margin-right: auto;
   width: 100%;
   @media screen and (min-width: $phone) {
-    padding: 0px 250px;
   }
   @media screen and (min-width: $tablet) {
-
+  }
+  @media screen and (min-width: $laptop) {
+    padding: 0px 100px;
   }
   @media screen and (min-width: $desktop) {
-
+    padding: 0px 250px;
+  }
+  @media screen and (min-width: $broad) {
   }
 }
