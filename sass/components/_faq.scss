@@ -1,5 +1,5 @@
 .faq {
-  padding: 50px 170px 70px 170px;
+  padding: 115px 0 60px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,6 +8,7 @@
   @media screen and (min-width: $tablet) {
   }
   @media screen and (min-width: $laptop) {
+    padding: 50px 170px 70px 170px;
   }
   @media screen and (min-width: $desktop) {
     padding: 100px 370px 130px 370px;
@@ -34,7 +35,9 @@
       margin-bottom: 0;
       font-size: 24px;
       font-weight: 700;
-      margin-right: 20px;
+      @media screen and (min-width: $laptop) {
+        margin-right: 20px;
+      }
     }
   }
   &__list {
@@ -77,12 +80,19 @@
     align-items: center;
     justify-content: space-between;
     &--margin {
-      margin-bottom: 15px;
+      margin-bottom: 30px;
+      @media screen and (min-width: $laptop) {
+        margin-bottom: 20px;
+      }
     }
   }
   &__img {
     width: 40px;
     height: 40px;
+    display: none;
+    @media screen and (min-width: $laptop) {
+      display: block;
+    }
   }
   &__text {
     font-weight: 400;
@@ -90,6 +100,8 @@
     line-height: 150%;
     max-width: 1000px;
     text-align: start;
-    padding-right: 100px;
+    @media screen and (min-width: $laptop) {
+      padding-right: 100px;
+    }
   }
 }

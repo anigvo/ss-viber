@@ -19,15 +19,17 @@
   &__image {
     margin-bottom: -2px;
     max-width: 828px;
+    width: 100%;
   }
   &__wrapper {
-    max-width: 420px;
-    margin-right: 30px;
     @media screen and (min-width: $phone) {
     }
     @media screen and (min-width: $tablet) {
+      max-width: 420px;
+      margin-right: auto;
     }
     @media screen and (min-width: $laptop) {
+      margin-right: 30px;
     }
     @media screen and (min-width: $laptop-desktop) {
       max-width: 520px;
@@ -38,13 +40,17 @@
     }
   }
   &__text {
-    color: $main-text;
-    font-weight: 600;
-    font-size: 25px;
-    margin-bottom: 25px;
+    color: $secondary-text;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 30px;
     @media screen and (min-width: $phone) {
     }
     @media screen and (min-width: $tablet) {
+      color: $main-text;
+      font-weight: 600;
+      font-size: 25px;
+      margin-bottom: 25px;
     }
     @media screen and (min-width: $laptop) {
     }
@@ -56,13 +62,15 @@
     }
   }
   &__title {
-    color: $main-text;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 32px;
+    color: $secondary-text;
     margin-bottom: 20px;
     @media screen and (min-width: $phone) {
     }
     @media screen and (min-width: $tablet) {
+      color: $main-text;
+      font-size: 36px;
     }
     @media screen and (min-width: $laptop) {
     }
@@ -73,7 +81,12 @@
     }
   }
   &__span {
-    font-weight: 800;
-    color: $span-text;
+    font-weight: 700;
+    font-size: 32px;
+    color: $secondary-text;
+    @media screen and (min-width: $tablet) {
+      font-weight: 800;
+      color: $span-text;
+    }
   }
 }

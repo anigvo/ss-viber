@@ -59,7 +59,7 @@
           <p class="hero__text">умное решение для вашего бизнеса</p>
 
           <a
-            class="contact-button contact-button--secondary contact-button--small"
+            class="contact-button contact-button--secondary contact-button--up"
             target="_blank"
             href="https://smartsender.com"
             ><span>Подать заявку сейчас</span>
@@ -69,16 +69,33 @@
         </div>
         <picture class="hero__image">
           <source
+            srcset="
+              ./images/frames/girl-mobile.png    1x,
+              ./images/frames/girl-mobile@2x.png 2x
+            "
+            type="image/png"
+            media="(max-width: 767px)"
+          />
+          <source
             srcset="./images/frames/girl.png 1x, ./images/frames/girl@2x.png 2x"
             type="image/png"
+            media="(min-width: 768px)"
           />
-
           <img src="./images/frames/girl.png" alt="Girl with phone" />
         </picture>
+
+        <a
+          class="contact-button contact-button--secondary contact-button--down"
+          target="_blank"
+          href="https://smartsender.com"
+          ><span>Подать заявку сейчас</span>
+          <svg class="contact-button__icon">
+            <use href="./images/svg/sprite.svg#arrow"></use></svg
+        ></a>
       </section>
     </div>
 
-    <section class="section container">
+    <section class="section container container--off">
       <div class="section__about">
         <p class="section__text section__text--margin">
           <span class="section__text--span">Viber</span> предоставляет удобную и
@@ -199,7 +216,7 @@
       </picture>
     </section>
 
-    <section class="section container" id="steps">
+    <section class="section section--reverse container" id="steps">
       <picture class="section__img section__img--phone">
         <source
           srcset="
@@ -272,7 +289,9 @@
       >
     </section>
 
-    <section class="section container section--gray section__limitations">
+    <section
+      class="section container section--gray section__limitations container--off"
+    >
       <h2 class="section__title section__title--limitations">
         <span class="section__title--span">Ограничения </span>при создании
         чат-бота в Viber — не проблема, если у вас есть надёжный партнер
@@ -484,9 +503,9 @@
       >
     </section>
 
-    <section class="section container" id="secrets">
+    <section class="section section__secrets container" id="secrets">
       <ul class="section__list section__list--secrets">
-        <li class="section__item section__item--secrets section__item--first">
+        <li class="section__item section__item--secrets">
           <div class="section__wrapper--secrets">
             <h2 class="section__title section__title--secrets">
               <span class="section__title--span section__title--semibold"
