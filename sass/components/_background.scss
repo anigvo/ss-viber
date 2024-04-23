@@ -5,7 +5,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: url("../../images/svg/hero-background-mobile.svg");
+  background-image: url("../images/svg/hero-background-mobile.svg");
   background-size: cover;
   background-repeat: no-repeat;
   @media screen and (min-width: $phone) {
@@ -13,7 +13,7 @@
   @media screen and (min-width: $tablet) {
     width: calc(100% / 3 * 2);
     margin-left: calc(100% / 3);
-    background-image: url("../../images/svg/hero-background.svg");
+    background-image: url("../images/svg/hero-background.svg");
   }
   @media screen and (min-width: $laptop) {
     width: calc(100% / 4 * 3);

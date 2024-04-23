@@ -215,7 +215,7 @@ ul {
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: url("../../images/svg/hero-background-mobile.svg");
+  background-image: url("../images/svg/hero-background-mobile.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -223,7 +223,7 @@ ul {
   .background {
     width: 66.6666666667%;
     margin-left: 33.3333333333%;
-    background-image: url("../../images/svg/hero-background.svg");
+    background-image: url("../images/svg/hero-background.svg");
   }
 }
 @media screen and (min-width: 1280px) {
