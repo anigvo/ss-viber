@@ -830,7 +830,7 @@ ul {
   height: 28px;
   border-radius: 6px;
   background-color: transparent;
-  background-image: url("../../images/svg/point.svg");
+  background-image: url("../images/svg/point.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
