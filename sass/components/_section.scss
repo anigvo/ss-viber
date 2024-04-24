@@ -5,10 +5,6 @@
   padding-bottom: 50px;
   padding-top: 50px;
   flex-direction: column;
-  @media screen and (min-width: $phone) {
-  }
-  @media screen and (min-width: $tablet) {
-  }
   @media screen and (min-width: $laptop) {
     flex-direction: row;
   }
@@ -28,16 +24,8 @@
   }
   &--reverse {
     flex-direction: column-reverse;
-    @media screen and (min-width: $phone) {
-    }
-    @media screen and (min-width: $tablet) {
-    }
     @media screen and (min-width: $laptop) {
       flex-direction: row;
-    }
-    @media screen and (min-width: $desktop) {
-    }
-    @media screen and (min-width: $broad) {
     }
   }
   &__link {
@@ -55,10 +43,6 @@
       $blue-violet-2-transparent 25%,
       $blue-violet-2-transparent 58%
     );
-    @media screen and (min-width: $phone) {
-    }
-    @media screen and (min-width: $tablet) {
-    }
     @media screen and (min-width: $laptop) {
       max-width: 700px;
       padding: 42px 40px 42px 45px;
@@ -71,16 +55,10 @@
       padding: 62px 60px 62px 65px;
       margin-right: 140px;
     }
-    @media screen and (min-width: $broad) {
-    }
   }
   &__bots {
     padding-bottom: 30px;
     padding-top: 60px;
-    @media screen and (min-width: $phone) {
-    }
-    @media screen and (min-width: $tablet) {
-    }
     @media screen and (min-width: $laptop) {
       margin-right: 45px;
       max-width: 540px;
@@ -95,8 +73,6 @@
       padding-bottom: 130px;
       padding-top: 100px;
     }
-    @media screen and (min-width: $broad) {
-    }
   }
   &__limitations {
     flex-direction: column;
@@ -109,20 +85,12 @@
   }
   &__steps {
     margin-bottom: 30px;
-    @media screen and (min-width: $phone) {
-    }
-    @media screen and (min-width: $tablet) {
-    }
     @media screen and (min-width: $laptop) {
       margin-bottom: 0;
       max-width: 550px;
     }
     @media screen and (min-width: $laptop-desktop) {
       max-width: 710px;
-    }
-    @media screen and (min-width: $desktop) {
-    }
-    @media screen and (min-width: $broad) {
     }
   }
 
@@ -167,10 +135,6 @@
       width: 60px;
       height: 60px;
       border-radius: 50%;
-      @media screen and (min-width: $phone) {
-      }
-      @media screen and (min-width: $tablet) {
-      }
       @media screen and (min-width: $laptop) {
         width: 70px;
         height: 70px;
@@ -178,8 +142,6 @@
       @media screen and (min-width: $desktop) {
         width: 80px;
         height: 80px;
-      }
-      @media screen and (min-width: $broad) {
       }
     }
     &--viber {
@@ -189,10 +151,6 @@
       transform: translateX(50%) translateY(50%) rotate(15deg);
       width: 100px;
       height: 100px;
-      @media screen and (min-width: $phone) {
-      }
-      @media screen and (min-width: $tablet) {
-      }
       @media screen and (min-width: $laptop) {
         top: 50px;
         right: -50px;
@@ -206,17 +164,11 @@
         width: 100px;
         height: 100px;
       }
-      @media screen and (min-width: $broad) {
-      }
     }
     &--messenger {
       max-width: 745px;
     }
     &--phone {
-      @media screen and (min-width: $phone) {
-      }
-      @media screen and (min-width: $tablet) {
-      }
       @media screen and (min-width: $laptop) {
         max-width: 650px;
         margin-right: 60px;
@@ -224,8 +176,6 @@
       }
       @media screen and (min-width: $desktop) {
         margin-right: 100px;
-      }
-      @media screen and (min-width: $broad) {
       }
     }
     &--calendar {
@@ -259,28 +209,23 @@
     &--secrets {
       display: none;
       @media screen and (min-width: $phone) {
+        position: absolute;
         display: block;
         width: 330px;
         height: 300px;
-        position: absolute;
         top: -50px;
+        right: -25px;
+      }
+      @media screen and (min-width: $tablet) {
         right: -45px;
       }
     }
   }
   &__clients {
     padding: 0 25px 0 25px;
-    @media screen and (min-width: $phone) {
-    }
-    @media screen and (min-width: $tablet) {
-    }
     @media screen and (min-width: $laptop) {
       padding: 0;
       max-width: 500px;
-    }
-    @media screen and (min-width: $desktop) {
-    }
-    @media screen and (min-width: $broad) {
     }
   }
   &__title {
@@ -292,14 +237,8 @@
     @media screen and (min-width: $phone) {
       font-size: 32px;
     }
-    @media screen and (min-width: $tablet) {
-    }
-    @media screen and (min-width: $laptop) {
-    }
     @media screen and (min-width: $desktop) {
       margin-bottom: 45px;
-    }
-    @media screen and (min-width: $broad) {
     }
     &--span {
       font-weight: 700;
@@ -308,17 +247,11 @@
     &--clients {
       margin-bottom: 45px;
 
-      @media screen and (min-width: $phone) {
-      }
-      @media screen and (min-width: $tablet) {
-      }
       @media screen and (min-width: $laptop) {
         margin-bottom: 20px;
       }
       @media screen and (min-width: $desktop) {
         margin-bottom: 22px;
-      }
-      @media screen and (min-width: $broad) {
       }
     }
     &--steps {
@@ -342,16 +275,8 @@
       margin-bottom: 60px;
       text-align: center;
       max-width: 650px;
-      @media screen and (min-width: $phone) {
-      }
-      @media screen and (min-width: $tablet) {
-      }
-      @media screen and (min-width: $laptop) {
-      }
       @media screen and (min-width: $desktop) {
         margin-bottom: 100px;
-      }
-      @media screen and (min-width: $broad) {
       }
     }
     &--list {
@@ -384,16 +309,12 @@
       @media screen and (min-width: $phone) {
         flex-wrap: nowrap;
       }
-      @media screen and (min-width: $tablet) {
-      }
       @media screen and (min-width: $laptop) {
         justify-content: flex-start;
         margin-top: 20px;
       }
       @media screen and (min-width: $desktop) {
         margin-top: 50px;
-      }
-      @media screen and (min-width: $broad) {
       }
     }
     &--steps {
@@ -422,17 +343,9 @@
       align-items: normal;
       row-gap: 60px;
       column-gap: 40px;
-      @media screen and (min-width: $phone) {
-      }
-      @media screen and (min-width: $tablet) {
-      }
-      @media screen and (min-width: $laptop) {
-      }
       @media screen and (min-width: $desktop) {
         row-gap: 100px;
         column-gap: 50px;
-      }
-      @media screen and (min-width: $broad) {
       }
     }
   }
@@ -492,13 +405,9 @@
       @media screen and (min-width: $tablet) {
         width: calc((100% - 22px) / 2);
       }
-      @media screen and (min-width: $laptop) {
-      }
       @media screen and (min-width: $desktop) {
         width: calc((100% - 3 * 22px) / 4);
         padding: 30px;
-      }
-      @media screen and (min-width: $broad) {
       }
     }
     &--secrets {
@@ -551,6 +460,7 @@
       }
     }
     &--calendar {
+      display: none;
       position: relative;
       max-width: 460px;
       padding: 35px 20px 35px 30px;
@@ -562,20 +472,8 @@
         $blue-violet-2-transparent 25%,
         $blue-violet-2-transparent 58%
       );
-      display: none;
-      @media screen and (min-width: $phone) {
-      }
-      @media screen and (min-width: $tablet) {
-      }
-      @media screen and (min-width: $laptop) {
-      }
       @media screen and (min-width: $laptop-desktop) {
         display: block;
-      }
-
-      @media screen and (min-width: $desktop) {
-      }
-      @media screen and (min-width: $broad) {
       }
     }
     &--calendar-down {
@@ -590,20 +488,12 @@
         $blue-violet-2-transparent 58%
       );
       display: block;
-      @media screen and (min-width: $phone) {
-      }
-      @media screen and (min-width: $tablet) {
-      }
       @media screen and (min-width: $laptop) {
         border-radius: 10px;
         border: none;
       }
       @media screen and (min-width: $laptop-desktop) {
         display: none;
-      }
-      @media screen and (min-width: $desktop) {
-      }
-      @media screen and (min-width: $broad) {
       }
     }
   }

@@ -57,18 +57,10 @@
     width: 18px;
     height: 18px;
     margin-left: 25px;
-    @media screen and (min-width: $phone) {
-    }
-    @media screen and (min-width: $tablet) {
-    }
-    @media screen and (min-width: $laptop) {
-    }
     @media screen and (min-width: $desktop) {
       width: 22px;
       height: 22px;
       margin-left: 35px;
-    }
-    @media screen and (min-width: $broad) {
     }
   }
   &--secondary {

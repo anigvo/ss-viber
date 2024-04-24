@@ -19,10 +19,7 @@
     font-weight: 700;
     font-size: 24px;
     margin-bottom: 20px;
-    @media screen and (min-width: $phone) {
-    }
-    @media screen and (min-width: $tablet) {
-    }
+
     @media screen and (min-width: $laptop) {
       font-weight: 600;
       font-size: 26px;
@@ -31,22 +28,15 @@
       font-size: 32px;
       margin-bottom: 35px;
     }
-    @media screen and (min-width: $broad) {
-    }
+
     &--secondary {
       text-transform: uppercase;
       margin-bottom: 45px;
-      @media screen and (min-width: $phone) {
-      }
-      @media screen and (min-width: $tablet) {
-      }
       @media screen and (min-width: $laptop) {
         margin-bottom: 50px;
       }
       @media screen and (min-width: $desktop) {
         margin-bottom: 60px;
-      }
-      @media screen and (min-width: $broad) {
       }
     }
   }
