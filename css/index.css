@@ -438,6 +438,12 @@ ul {
   height: 60px;
   border-radius: 50%;
 }
+@media screen and (max-width: 330px) {
+  .section__img--clients {
+    width: 50px;
+    height: 50px;
+  }
+}
 @media screen and (min-width: 1280px) {
   .section__img--clients {
     width: 70px;
@@ -523,16 +529,22 @@ ul {
   margin-bottom: 15px;
 }
 .section__img--secrets {
-  display: none;
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: -50px;
+  right: -25px;
+  height: auto;
+}
+@media screen and (max-width: 330px) {
+  .section__img--secrets {
+    top: -40px;
+    right: -20px;
+  }
 }
 @media screen and (min-width: 380px) {
   .section__img--secrets {
-    position: absolute;
-    display: block;
     width: 330px;
-    height: 300px;
-    top: -50px;
-    right: -25px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -555,6 +567,11 @@ ul {
   line-height: 140%;
   font-size: 28px;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 330px) {
+  .section__title {
+    font-size: 24px;
+  }
 }
 @media screen and (min-width: 380px) {
   .section__title {
@@ -630,13 +647,17 @@ ul {
   font-weight: 600;
 }
 .section__title--secrets {
-  max-width: 320px;
   margin: 0;
-  text-align: center;
+  max-width: 270px;
 }
-@media screen and (min-width: 380px) {
+@media screen and (max-width: 330px) {
   .section__title--secrets {
-    text-align: left;
+    max-width: 200px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section__title--secrets {
+    max-width: 320px;
   }
 }
 .section__title--violet {
@@ -671,6 +692,11 @@ ul {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+@media screen and (max-width: 330px) {
+  .section__list--clients {
+    gap: 15px;
+  }
 }
 @media screen and (min-width: 380px) {
   .section__list--clients {
@@ -763,6 +789,11 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (max-width: 330px) {
+  .section__item--clients {
+    width: calc((100% - 45px) / 4);
+  }
+}
 @media screen and (min-width: 380px) {
   .section__item--clients {
     width: calc((100% - 90px) / 4);
@@ -819,20 +850,22 @@ ul {
 .section__item--secrets {
   width: 100%;
 }
-@media screen and (min-width: 380px) {
+.section__item--secrets:first-child {
+  margin-bottom: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (max-width: 330px) {
   .section__item--secrets:first-child {
-    margin-bottom: 90px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1280px) {
   .section__item--secrets:first-child {
-    display: block;
     margin-bottom: 0;
   }
 }
@@ -1067,6 +1100,11 @@ ul {
   padding: 10px 0;
   font-size: 14px;
   font-weight: 700;
+}
+@media screen and (max-width: 330px) {
+  .contact-button--small {
+    width: auto;
+  }
 }
 @media screen and (min-width: 768px) {
   .contact-button--small {

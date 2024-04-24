@@ -135,6 +135,10 @@
       width: 60px;
       height: 60px;
       border-radius: 50%;
+      @media screen and (max-width: 330px) {
+        width: 50px;
+        height: 50px;
+      }
       @media screen and (min-width: $laptop) {
         width: 70px;
         height: 70px;
@@ -207,14 +211,18 @@
       margin-bottom: 15px;
     }
     &--secrets {
-      display: none;
+      position: absolute;
+      display: block;
+      width: 100%;
+      top: -50px;
+      right: -25px;
+      height: auto;
+      @media screen and (max-width: 330px) {
+        top: -40px;
+        right: -20px;
+      }
       @media screen and (min-width: $phone) {
-        position: absolute;
-        display: block;
         width: 330px;
-        height: 300px;
-        top: -50px;
-        right: -25px;
       }
       @media screen and (min-width: $tablet) {
         right: -45px;
@@ -234,6 +242,9 @@
     line-height: 140%;
     font-size: 28px;
     margin-bottom: 30px;
+    @media screen and (max-width: 330px) {
+      font-size: 24px;
+    }
     @media screen and (min-width: $phone) {
       font-size: 32px;
     }
@@ -292,11 +303,13 @@
       font-weight: 600;
     }
     &--secrets {
-      max-width: 320px;
       margin: 0;
-      text-align: center;
-      @media screen and (min-width: $phone) {
-        text-align: left;
+      max-width: 270px;
+      @media screen and (max-width: 330px) {
+        max-width: 200px;
+      }
+      @media screen and (min-width: $tablet) {
+        max-width: 320px;
       }
     }
     &--violet {
@@ -316,6 +329,9 @@
       flex-direction: row;
       justify-content: center;
       flex-wrap: wrap;
+      @media screen and (max-width: 330px) {
+        gap: 15px;
+      }
       @media screen and (min-width: $phone) {
         gap: 30px;
         flex-wrap: nowrap;
@@ -366,6 +382,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @media screen and (max-width: 330px) {
+        width: calc((100% - 3 * 15px) / 4);
+      }
       @media screen and (min-width: $phone) {
         width: calc((100% - 3 * 30px) / 4);
       }
@@ -423,14 +442,13 @@
     &--secrets {
       width: 100%;
       &:first-child {
-        @media screen and (min-width: $phone) {
-          margin-bottom: 90px;
-          display: flex;
-          justify-content: center;
+        margin-bottom: 90px;
+        display: flex;
+        justify-content: center;
+        @media screen and (max-width: 330px) {
+          margin-bottom: 60px;
         }
-
         @media screen and (min-width: $laptop) {
-          display: block;
           margin-bottom: 0;
         }
       }
