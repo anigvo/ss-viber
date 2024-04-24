@@ -12,7 +12,6 @@
     width: 100%;
   }
   &__wrapper {
-
     @media screen and (min-width: $tablet) {
       max-width: 420px;
       margin-right: auto;
@@ -60,6 +59,10 @@
     @media screen and (min-width: $tablet) {
       font-weight: 800;
       color: $span-text;
+      font-size: 36px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 48px;
     }
   }
 }
