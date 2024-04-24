@@ -79,10 +79,24 @@ faqItems.forEach((faqItem) => {
   const faqWrapper = faqItem.querySelector(".faq__wrapper");
 
   faqItem.addEventListener("click", () => {
+    faqItems.forEach((item) => {
+      if (item !== faqItem && item.classList.contains("faq__item--active")) {
+        item.classList.remove("faq__item--active");
+        item.querySelector(".faq__text").classList.add("visually-hidden");
+        item.querySelector("#up").classList.add("visually-hidden");
+        item.querySelector("#down").classList.remove("visually-hidden");
+        item.querySelector(".faq__wrapper").classList.remove("faq__wrapper--margin");
+      }
+    });
+
     faqItem.classList.toggle("faq__item--active");
     imgUp.classList.toggle("visually-hidden");
     imgDown.classList.toggle("visually-hidden");
     faqText.classList.toggle("visually-hidden");
     faqWrapper.classList.toggle("faq__wrapper--margin");
+
+    if (faqItem.classList.contains("faq__item--active")) {
+      faqItem.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   });
 });
