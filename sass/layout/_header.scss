@@ -1,58 +1,60 @@
-.header {
-  padding: 15px 0 50px 0;
-  @media screen and (min-width: $laptop) {
-    padding: 30px 0;
-  }
-  &__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  &__logo {
-    display: none;
-    @media screen and (min-width: $tablet) {
-      display: block;
-      width: 151px;
-      height: 60px;
+.viber-landing {
+  .header {
+    padding: 15px 0 50px 0;
+    @media screen and (min-width: $laptop) {
+      padding: 30px 0;
     }
-  }
-  &__logo-white {
-    display: block;
-    width: 75px;
-    height: 30px;
-    @media screen and (min-width: $tablet) {
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__logo {
       display: none;
+      @media screen and (min-width: $tablet) {
+        display: block;
+        width: 151px;
+        height: 60px;
+      }
     }
-  }
-  &__wrapper {
-    display: flex;
-    align-items: center;
-  }
-  &__nav {
-    display: none;
-    @media screen and (min-width: $laptop) {
+    &__logo-white {
       display: block;
+      width: 75px;
+      height: 30px;
+      @media screen and (min-width: $tablet) {
+        display: none;
+      }
     }
-  }
-  &__list {
-    display: flex;
-    gap: 40px;
-  }
-  &__button {
-    @media screen and (min-width: $laptop) {
-      margin-left: 65px;
+    &__wrapper {
+      display: flex;
+      align-items: center;
     }
-  }
-  &__link {
-    padding: 31px 0;
-    font-weight: 400;
-    line-height: 150%;
-    font-size: 14px;
-    color: $secondary-text;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-      color: $main-text-transparent;
+    &__nav {
+      display: none;
+      @media screen and (min-width: $laptop) {
+        display: block;
+      }
+    }
+    &__list {
+      display: flex;
+      gap: 40px;
+    }
+    &__button {
+      @media screen and (min-width: $laptop) {
+        margin-left: 65px;
+      }
+    }
+    &__link {
+      padding: 31px 0;
+      font-weight: 400;
+      line-height: 150%;
+      font-size: 14px;
+      color: $secondary-text;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        color: $main-text-transparent;
+      }
     }
   }
 }

@@ -1,147 +1,153 @@
-.contact-button {
-  width: 100%;
-  height: 80px;
-  padding: 30px 15px;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-  font-family: "Montserrat";
-  font-weight: 600;
-  color: $secondary-text;
-  border-radius: 8px;
-  border: none;
-  text-align: center;
-  text-shadow: 0px 3px 2px $main-text-transparent;
-  box-shadow: 0 30px 32px $contact-button-shadow;
-  cursor: pointer;
-  background-image: linear-gradient(
-    to right,
-    $contact-button-1,
-    $contact-button-2
-  );
-  background-size: 100%;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  @media screen and (min-width: $phone) {
-    width: 340px;
+.viber-landing {
+  .contact-button {
+    width: 100%;
     height: 80px;
-    padding: 30px 0;
-  }
-  &:hover,
-  &:focus {
-    box-shadow: 0 10px 32px $contact-button-shadow;
-  }
-  &--small {
-    width: 180px;
-    height: 40px;
-    padding: 10px 0;
-    font-size: 14px;
-    font-weight: 700;
-    @media screen and (max-width: 330px) {
-      width: auto;
-    }
-    @media screen and (min-width: $tablet) {
-      width: 240px;
-      height: 60px;
-      padding: 20px 0;
-      font-size: 14px;
-      font-weight: 600;
-    }
-    @media screen and (min-width: $laptop-desktop) {
+    padding: 30px 15px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: $secondary-text;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    text-shadow: 0px 3px 2px $main-text-transparent;
+    box-shadow: 0 30px 32px $contact-button-shadow;
+    cursor: pointer;
+    background-image: linear-gradient(
+      to right,
+      $contact-button-1,
+      $contact-button-2
+    );
+    background-size: 100%;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: $phone) {
       width: 340px;
       height: 80px;
       padding: 30px 0;
-      font-size: 18px;
-    }
-  }
-  &__icon {
-    width: 18px;
-    height: 18px;
-    margin-left: 25px;
-    @media screen and (min-width: $desktop) {
-      width: 22px;
-      height: 22px;
-      margin-left: 35px;
-    }
-  }
-  &--secondary {
-    background-image: linear-gradient(to right, $blue-violet-1, $blue-violet-2);
-    box-shadow: 0 30px 32px $blue-violet-shadow;
-    @media screen and (min-width: $tablet) {
-      width: 240px;
-      height: 60px;
-      padding: 20px 0;
-      font-size: 14px;
-      font-weight: 600;
-    }
-    @media screen and (min-width: $laptop-desktop) {
-      width: 340px;
-      height: 80px;
-      padding: 30px 0;
-      font-size: 18px;
     }
     &:hover,
     &:focus {
-      box-shadow: 0 10px 32px $blue-violet-shadow;
+      box-shadow: 0 10px 32px $contact-button-shadow;
     }
-  }
-  &--up {
-    display: none;
-    @media screen and (min-width: $laptop) {
-      display: flex;
+    &--small {
+      width: 180px;
+      height: 40px;
+      padding: 10px 0;
+      font-size: 14px;
+      font-weight: 700;
+      @media screen and (max-width: 330px) {
+        width: auto;
+      }
+      @media screen and (min-width: $tablet) {
+        width: 240px;
+        height: 60px;
+        padding: 20px 0;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      @media screen and (min-width: $laptop-desktop) {
+        width: 340px;
+        height: 80px;
+        padding: 30px 0;
+        font-size: 18px;
+      }
     }
-  }
-  &--down {
-    display: flex;
-    width: 100%;
-    margin-top: 15px;
-    @media screen and (min-width: $laptop) {
+    &__icon {
+      width: 18px;
+      height: 18px;
+      margin-left: 25px;
+      @media screen and (min-width: $desktop) {
+        width: 22px;
+        height: 22px;
+        margin-left: 35px;
+      }
+    }
+    &--secondary {
+      background-image: linear-gradient(
+        to right,
+        $blue-violet-1,
+        $blue-violet-2
+      );
+      box-shadow: 0 30px 32px $blue-violet-shadow;
+      @media screen and (min-width: $tablet) {
+        width: 240px;
+        height: 60px;
+        padding: 20px 0;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      @media screen and (min-width: $laptop-desktop) {
+        width: 340px;
+        height: 80px;
+        padding: 30px 0;
+        font-size: 18px;
+      }
+      &:hover,
+      &:focus {
+        box-shadow: 0 10px 32px $blue-violet-shadow;
+      }
+    }
+    &--up {
       display: none;
+      @media screen and (min-width: $laptop) {
+        display: flex;
+      }
+    }
+    &--down {
+      display: flex;
+      width: 100%;
+      margin-top: 15px;
+      @media screen and (min-width: $laptop) {
+        display: none;
+      }
     }
   }
-}
-.contact-button::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  background-image: linear-gradient(
-    to right,
-    $contact-button-hover-1,
-    $contact-button-hover-2
-  );
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: all 250ms;
-  border-radius: 8px;
-  border: none;
-}
-.contact-button:hover::before {
-  opacity: 1;
-}
+  .contact-button::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-image: linear-gradient(
+      to right,
+      $contact-button-hover-1,
+      $contact-button-hover-2
+    );
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 250ms;
+    border-radius: 8px;
+    border: none;
+  }
+  .contact-button:hover::before {
+    opacity: 1;
+  }
 
-.contact-button--secondary::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  background-image: linear-gradient(
-    to right,
-    $blue-violet-hover-1,
-    $blue-violet-hover-2
-  );
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: all 250ms;
-  border-radius: 8px;
-  border: none;
-}
-.contact-button--secondary:hover::before {
-  opacity: 1;
+  .contact-button--secondary::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-image: linear-gradient(
+      to right,
+      $blue-violet-hover-1,
+      $blue-violet-hover-2
+    );
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 250ms;
+    border-radius: 8px;
+    border: none;
+  }
+  .contact-button--secondary:hover::before {
+    opacity: 1;
+  }
 }

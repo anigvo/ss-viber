@@ -30,22 +30,13 @@
   font-display: fallback;
   font-optical-sizing: auto;
 }
-html {
-  scroll-behavior: smooth;
-}
-
-.body-scroll-lock {
-  overflow: hidden;
-}
-
-body {
+.viber-landing {
   position: relative;
-  background-color: #ffffff;
   color: #000000;
   font-family: "Montserrat", arial, sans-serif;
+  scroll-behavior: smooth;
 }
-
-.visually-hidden {
+.viber-landing .visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -59,56 +50,50 @@ body {
           clip-path: inset(50%);
   margin: -1px;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-img,
-ul {
+.viber-landing h1,
+.viber-landing h2,
+.viber-landing h3,
+.viber-landing h4,
+.viber-landing h5,
+.viber-landing h6,
+.viber-landing p,
+.viber-landing a,
+.viber-landing img,
+.viber-landing ul {
   margin: 0;
 }
-
-a {
+.viber-landing a {
   text-decoration: none;
   padding: 0px;
 }
-
-p {
+.viber-landing p {
   padding: 0px;
 }
-
-img {
+.viber-landing img {
   display: block;
   max-width: 100%;
   width: 100%;
   height: 100%;
 }
-
-picture {
+.viber-landing picture {
   display: block;
   max-width: 100%;
   height: auto;
 }
-
-ul {
+.viber-landing ul {
   list-style: none;
   padding: 0;
 }
 
-.header {
+.viber-landing .header {
   padding: 15px 0 50px 0;
 }
 @media screen and (min-width: 1280px) {
-  .header {
+  .viber-landing .header {
     padding: 30px 0;
   }
 }
-.header__container {
+.viber-landing .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,27 +104,27 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.header__logo {
+.viber-landing .header__logo {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .header__logo {
+  .viber-landing .header__logo {
     display: block;
     width: 151px;
     height: 60px;
   }
 }
-.header__logo-white {
+.viber-landing .header__logo-white {
   display: block;
   width: 75px;
   height: 30px;
 }
 @media screen and (min-width: 768px) {
-  .header__logo-white {
+  .viber-landing .header__logo-white {
     display: none;
   }
 }
-.header__wrapper {
+.viber-landing .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,26 +132,26 @@ ul {
       -ms-flex-align: center;
           align-items: center;
 }
-.header__nav {
+.viber-landing .header__nav {
   display: none;
 }
 @media screen and (min-width: 1280px) {
-  .header__nav {
+  .viber-landing .header__nav {
     display: block;
   }
 }
-.header__list {
+.viber-landing .header__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 40px;
 }
 @media screen and (min-width: 1280px) {
-  .header__button {
+  .viber-landing .header__button {
     margin-left: 65px;
   }
 }
-.header__link {
+.viber-landing .header__link {
   padding: 31px 0;
   font-weight: 400;
   line-height: 150%;
@@ -175,41 +160,41 @@ ul {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header__link:hover, .header__link:focus {
+.viber-landing .header__link:hover, .viber-landing .header__link:focus {
   color: rgba(0, 0, 0, 0.368627451);
 }
 
-.container {
+.viber-landing .container {
   padding: 0px 25px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
 @media screen and (min-width: 1280px) {
-  .container {
+  .viber-landing .container {
     padding: 0px 100px;
   }
 }
 @media screen and (min-width: 1920px) {
-  .container {
+  .viber-landing .container {
     padding: 0px 250px;
   }
 }
-.container--off {
+.viber-landing .container--off {
   padding: 0;
 }
 @media screen and (min-width: 1280px) {
-  .container--off {
+  .viber-landing .container--off {
     padding: 0px 100px;
   }
 }
 @media screen and (min-width: 1920px) {
-  .container--off {
+  .viber-landing .container--off {
     padding: 0px 250px;
   }
 }
 
-.background {
+.viber-landing .background {
   z-index: -1;
   position: absolute;
   top: 0;
@@ -221,36 +206,35 @@ ul {
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 768px) {
-  .background {
+  .viber-landing .background {
     width: 66.6666666667%;
     margin-left: 33.3333333333%;
     background-image: url("../images/svg/hero-background.svg");
   }
 }
 @media screen and (min-width: 1280px) {
-  .background {
+  .viber-landing .background {
     width: 75%;
     margin-left: 25%;
   }
 }
 @media screen and (min-width: 1650px) {
-  .background {
+  .viber-landing .background {
     width: 66.6666666667%;
     margin-left: 33.3333333333%;
   }
 }
 @media screen and (min-width: 1920px) {
-  .background {
+  .viber-landing .background {
     width: 70%;
     margin-left: 30%;
   }
 }
-
-.pre-background {
+.viber-landing .pre-background {
   position: relative;
 }
 
-.section {
+.viber-landing .section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,9 +250,10 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #ffffff;
 }
 @media screen and (min-width: 1280px) {
-  .section {
+  .viber-landing .section {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -276,52 +261,52 @@ ul {
   }
 }
 @media screen and (min-width: 1920px) {
-  .section {
+  .viber-landing .section {
     padding-bottom: 130px;
     padding-top: 100px;
   }
 }
 @media screen and (min-width: 2500px) {
-  .section {
+  .viber-landing .section {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
-.section--gray {
+.viber-landing .section--gray {
   background-color: #f5f5f5;
 }
-.section--padding {
+.viber-landing .section--padding {
   padding-bottom: 0;
   padding-top: 0;
 }
-.section--reverse {
+.viber-landing .section--reverse {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
 @media screen and (min-width: 1280px) {
-  .section--reverse {
+  .viber-landing .section--reverse {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
 }
-.section__link {
+.viber-landing .section__link {
   font-weight: 700;
   color: #0862f6;
   text-decoration: underline;
 }
-.section__about {
+.viber-landing .section__about {
   position: relative;
   margin-bottom: 70px;
   padding: 42px 20px 100px 20px;
   background-image: linear-gradient(45deg, rgba(19, 128, 246, 0.3019607843) 0%, rgba(120, 96, 242, 0.3019607843) 25%, rgba(120, 96, 242, 0.3019607843) 58%);
 }
 @media screen and (min-width: 1280px) {
-  .section__about {
+  .viber-landing .section__about {
     max-width: 700px;
     padding: 42px 40px 42px 45px;
     margin-right: 100px;
@@ -331,17 +316,17 @@ ul {
   }
 }
 @media screen and (min-width: 1920px) {
-  .section__about {
+  .viber-landing .section__about {
     padding: 62px 60px 62px 65px;
     margin-right: 140px;
   }
 }
-.section__bots {
+.viber-landing .section__bots {
   padding-bottom: 30px;
   padding-top: 60px;
 }
 @media screen and (min-width: 1280px) {
-  .section__bots {
+  .viber-landing .section__bots {
     margin-right: 45px;
     max-width: 540px;
     padding-bottom: 50px;
@@ -349,18 +334,18 @@ ul {
   }
 }
 @media screen and (min-width: 1650px) {
-  .section__bots {
+  .viber-landing .section__bots {
     max-width: 640px;
   }
 }
 @media screen and (min-width: 1920px) {
-  .section__bots {
+  .viber-landing .section__bots {
     margin-right: 65px;
     padding-bottom: 130px;
     padding-top: 100px;
   }
 }
-.section__limitations {
+.viber-landing .section__limitations {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -370,7 +355,7 @@ ul {
           align-items: flex-start;
   padding-bottom: 100px;
 }
-.section__opportunity {
+.viber-landing .section__opportunity {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -379,52 +364,52 @@ ul {
       -ms-flex-align: center;
           align-items: center;
 }
-.section__steps {
+.viber-landing .section__steps {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1280px) {
-  .section__steps {
+  .viber-landing .section__steps {
     margin-bottom: 0;
     max-width: 550px;
   }
 }
 @media screen and (min-width: 1650px) {
-  .section__steps {
+  .viber-landing .section__steps {
     max-width: 710px;
   }
 }
-.section__secrets {
+.viber-landing .section__secrets {
   padding-bottom: 100px;
 }
 @media screen and (min-width: 1280px) {
-  .section__secrets {
+  .viber-landing .section__secrets {
     padding-bottom: 160px;
   }
 }
-.section__text {
+.viber-landing .section__text {
   color: #000000;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
 }
-.section__text--span {
+.viber-landing .section__text--span {
   font-weight: 700;
 }
-.section__text--margin {
+.viber-landing .section__text--margin {
   margin-bottom: 30px;
 }
-.section__text--steps {
+.viber-landing .section__text--steps {
   color: #000000;
 }
 @media screen and (min-width: 1280px) {
-  .section__text--steps {
+  .viber-landing .section__text--steps {
     color: rgba(0, 0, 0, 0.368627451);
   }
 }
-.section__text--limitations {
+.viber-landing .section__text--limitations {
   max-width: 670px;
 }
-.section__img--clients {
+.viber-landing .section__img--clients {
   border: double 5px transparent;
   border-radius: 50%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1380f6), to(#7860f2)), radial-gradient(circle at top left, #1380f6, #7860f2);
@@ -439,24 +424,24 @@ ul {
   border-radius: 50%;
 }
 @media screen and (max-width: 330px) {
-  .section__img--clients {
+  .viber-landing .section__img--clients {
     width: 50px;
     height: 50px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .section__img--clients {
+  .viber-landing .section__img--clients {
     width: 70px;
     height: 70px;
   }
 }
 @media screen and (min-width: 1920px) {
-  .section__img--clients {
+  .viber-landing .section__img--clients {
     width: 80px;
     height: 80px;
   }
 }
-.section__img--viber {
+.viber-landing .section__img--viber {
   position: absolute;
   bottom: 15px;
   right: 50%;
@@ -466,7 +451,7 @@ ul {
   height: 100px;
 }
 @media screen and (min-width: 1280px) {
-  .section__img--viber {
+  .viber-landing .section__img--viber {
     top: 50px;
     right: -50px;
     width: 80px;
@@ -476,36 +461,36 @@ ul {
   }
 }
 @media screen and (min-width: 1920px) {
-  .section__img--viber {
+  .viber-landing .section__img--viber {
     top: 60px;
     right: -60px;
     width: 100px;
     height: 100px;
   }
 }
-.section__img--messenger {
+.viber-landing .section__img--messenger {
   max-width: 745px;
 }
 @media screen and (min-width: 1280px) {
-  .section__img--phone {
+  .viber-landing .section__img--phone {
     max-width: 650px;
     margin-right: 60px;
     margin-bottom: -50px;
   }
 }
 @media screen and (min-width: 1920px) {
-  .section__img--phone {
+  .viber-landing .section__img--phone {
     margin-right: 100px;
   }
 }
-.section__img--calendar {
+.viber-landing .section__img--calendar {
   position: absolute;
   top: -158px;
   left: -266px;
   width: 415px;
   height: 300px;
 }
-.section__img--calendar-down {
+.viber-landing .section__img--calendar-down {
   position: absolute;
   top: -200px;
   -webkit-transform: translateX(-50%);
@@ -514,7 +499,7 @@ ul {
   width: 330px;
   height: 245px;
 }
-.section__img--limitations {
+.viber-landing .section__img--limitations {
   position: absolute;
   top: 0;
   left: 50%;
@@ -523,12 +508,12 @@ ul {
   width: 80px;
   height: 80px;
 }
-.section__img--opportunity {
+.viber-landing .section__img--opportunity {
   width: 60px;
   height: 60px;
   margin-bottom: 15px;
 }
-.section__img--secrets {
+.viber-landing .section__img--secrets {
   position: absolute;
   display: block;
   width: 100%;
@@ -537,31 +522,31 @@ ul {
   height: auto;
 }
 @media screen and (max-width: 330px) {
-  .section__img--secrets {
+  .viber-landing .section__img--secrets {
     top: -40px;
     right: -20px;
   }
 }
 @media screen and (min-width: 380px) {
-  .section__img--secrets {
+  .viber-landing .section__img--secrets {
     width: 330px;
   }
 }
 @media screen and (min-width: 768px) {
-  .section__img--secrets {
+  .viber-landing .section__img--secrets {
     right: -45px;
   }
 }
-.section__clients {
+.viber-landing .section__clients {
   padding: 0 25px 0 25px;
 }
 @media screen and (min-width: 1280px) {
-  .section__clients {
+  .viber-landing .section__clients {
     padding: 0;
     max-width: 500px;
   }
 }
-.section__title {
+.viber-landing .section__title {
   color: #000000;
   font-weight: 600;
   line-height: 140%;
@@ -569,38 +554,38 @@ ul {
   margin-bottom: 30px;
 }
 @media screen and (max-width: 330px) {
-  .section__title {
+  .viber-landing .section__title {
     font-size: 24px;
   }
 }
 @media screen and (min-width: 380px) {
-  .section__title {
+  .viber-landing .section__title {
     font-size: 32px;
   }
 }
 @media screen and (min-width: 1920px) {
-  .section__title {
+  .viber-landing .section__title {
     margin-bottom: 45px;
   }
 }
-.section__title--span {
+.viber-landing .section__title--span {
   font-weight: 700;
   color: #7860f2;
 }
-.section__title--clients {
+.viber-landing .section__title--clients {
   margin-bottom: 45px;
 }
 @media screen and (min-width: 1280px) {
-  .section__title--clients {
+  .viber-landing .section__title--clients {
     margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 1920px) {
-  .section__title--clients {
+  .viber-landing .section__title--clients {
     margin-bottom: 22px;
   }
 }
-.section__title--steps {
+.viber-landing .section__title--steps {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -609,66 +594,66 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.section__title--limitations {
+.viber-landing .section__title--limitations {
   margin-bottom: 25px;
   max-width: 650px;
   padding: 0 25px;
 }
 @media screen and (min-width: 1280px) {
-  .section__title--limitations {
+  .viber-landing .section__title--limitations {
     padding: 0;
   }
 }
-.section__title--secondary {
+.viber-landing .section__title--secondary {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 20px;
 }
-.section__title--opportunity {
+.viber-landing .section__title--opportunity {
   margin-bottom: 60px;
   text-align: center;
   max-width: 650px;
 }
 @media screen and (min-width: 1920px) {
-  .section__title--opportunity {
+  .viber-landing .section__title--opportunity {
     margin-bottom: 100px;
   }
 }
-.section__title--list {
+.viber-landing .section__title--list {
   font-weight: 700;
   font-size: 24px;
   line-height: 150%;
   margin-bottom: 16px;
 }
-.section__title--margin {
+.viber-landing .section__title--margin {
   margin-bottom: 20px;
 }
-.section__title--semibold {
+.viber-landing .section__title--semibold {
   font-weight: 600;
 }
-.section__title--secrets {
+.viber-landing .section__title--secrets {
   margin: 0;
   max-width: 270px;
 }
 @media screen and (max-width: 330px) {
-  .section__title--secrets {
+  .viber-landing .section__title--secrets {
     max-width: 200px;
   }
 }
 @media screen and (min-width: 768px) {
-  .section__title--secrets {
+  .viber-landing .section__title--secrets {
     max-width: 320px;
   }
 }
-.section__title--violet {
+.viber-landing .section__title--violet {
   color: #7860f2;
 }
 @media screen and (min-width: 768px) {
-  .section__title--violet {
+  .viber-landing .section__title--violet {
     color: currentColor;
   }
 }
-.section__list {
+.viber-landing .section__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -680,7 +665,7 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.section__list--clients {
+.viber-landing .section__list--clients {
   gap: 20px;
   margin-top: 45px;
   -webkit-box-orient: horizontal;
@@ -694,19 +679,19 @@ ul {
       flex-wrap: wrap;
 }
 @media screen and (max-width: 330px) {
-  .section__list--clients {
+  .viber-landing .section__list--clients {
     gap: 15px;
   }
 }
 @media screen and (min-width: 380px) {
-  .section__list--clients {
+  .viber-landing .section__list--clients {
     gap: 30px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
 }
 @media screen and (min-width: 1280px) {
-  .section__list--clients {
+  .viber-landing .section__list--clients {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -714,14 +699,14 @@ ul {
   }
 }
 @media screen and (min-width: 1920px) {
-  .section__list--clients {
+  .viber-landing .section__list--clients {
     margin-top: 50px;
   }
 }
-.section__list--steps {
+.viber-landing .section__list--steps {
   gap: 5px;
 }
-.section__list--limitations {
+.viber-landing .section__list--limitations {
   -webkit-box-align: normal;
       -ms-flex-align: normal;
           align-items: normal;
@@ -733,7 +718,7 @@ ul {
   padding: 0 25px;
 }
 @media screen and (min-width: 1280px) {
-  .section__list--limitations {
+  .viber-landing .section__list--limitations {
     padding: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -742,7 +727,7 @@ ul {
     gap: 20px;
   }
 }
-.section__list--opportunity {
+.viber-landing .section__list--opportunity {
   -webkit-box-align: normal;
       -ms-flex-align: normal;
           align-items: normal;
@@ -754,7 +739,7 @@ ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.section__list--secrets {
+.viber-landing .section__list--secrets {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-orient: horizontal;
@@ -770,14 +755,14 @@ ul {
           column-gap: 40px;
 }
 @media screen and (min-width: 1920px) {
-  .section__list--secrets {
+  .viber-landing .section__list--secrets {
     row-gap: 100px;
     -webkit-column-gap: 50px;
        -moz-column-gap: 50px;
             column-gap: 50px;
   }
 }
-.section__item--clients {
+.viber-landing .section__item--clients {
   width: calc((100% - 60px) / 4);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -790,16 +775,16 @@ ul {
           justify-content: center;
 }
 @media screen and (max-width: 330px) {
-  .section__item--clients {
+  .viber-landing .section__item--clients {
     width: calc((100% - 45px) / 4);
   }
 }
 @media screen and (min-width: 380px) {
-  .section__item--clients {
+  .viber-landing .section__item--clients {
     width: calc((100% - 90px) / 4);
   }
 }
-.section__item--steps {
+.viber-landing .section__item--steps {
   position: relative;
   width: 100%;
   padding: 25px;
@@ -807,10 +792,10 @@ ul {
   border: none;
   background-color: #f5f5f5;
 }
-.section__item--active {
+.viber-landing .section__item--active {
   background-image: linear-gradient(45deg, rgba(19, 128, 246, 0.3019607843) 0%, rgba(120, 96, 242, 0.3019607843) 25%, rgba(120, 96, 242, 0.3019607843) 58%);
 }
-.section__item--limitations {
+.viber-landing .section__item--limitations {
   position: relative;
   width: 100%;
   padding: 60px 20px 20px 20px;
@@ -819,12 +804,12 @@ ul {
   background-color: #ffffff;
 }
 @media screen and (min-width: 1280px) {
-  .section__item--limitations {
+  .viber-landing .section__item--limitations {
     width: calc((100% - 40px) / 3);
     padding: 60px 40px;
   }
 }
-.section__item--opportunity {
+.viber-landing .section__item--opportunity {
   width: 100%;
   padding: 20px;
   border-radius: 10px;
@@ -832,25 +817,25 @@ ul {
   background-image: linear-gradient(45deg, rgba(19, 128, 246, 0.3019607843) 0%, rgba(120, 96, 242, 0.3019607843) 25%, rgba(120, 96, 242, 0.3019607843) 58%);
 }
 @media screen and (min-width: 380px) {
-  .section__item--opportunity {
+  .viber-landing .section__item--opportunity {
     padding: 30px 40px;
   }
 }
 @media screen and (min-width: 768px) {
-  .section__item--opportunity {
+  .viber-landing .section__item--opportunity {
     width: calc((100% - 22px) / 2);
   }
 }
 @media screen and (min-width: 1920px) {
-  .section__item--opportunity {
+  .viber-landing .section__item--opportunity {
     width: calc((100% - 66px) / 4);
     padding: 30px;
   }
 }
-.section__item--secrets {
+.viber-landing .section__item--secrets {
   width: 100%;
 }
-.section__item--secrets:first-child {
+.viber-landing .section__item--secrets:first-child {
   margin-bottom: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -860,21 +845,21 @@ ul {
           justify-content: center;
 }
 @media screen and (max-width: 330px) {
-  .section__item--secrets:first-child {
+  .viber-landing .section__item--secrets:first-child {
     margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .section__item--secrets:first-child {
+  .viber-landing .section__item--secrets:first-child {
     margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1280px) {
-  .section__item--secrets {
+  .viber-landing .section__item--secrets {
     width: calc((100% - 100px) / 3);
   }
 }
-.section__icon {
+.viber-landing .section__icon {
   position: absolute;
   top: calc(50% + 4px);
   left: -12px;
@@ -888,7 +873,7 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.section__wrapper {
+.viber-landing .section__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -903,20 +888,20 @@ ul {
   padding: 0 25px;
 }
 @media screen and (min-width: 1280px) {
-  .section__wrapper {
+  .viber-landing .section__wrapper {
     padding: 0;
   }
 }
-.section__wrapper--secrets {
+.viber-landing .section__wrapper--secrets {
   position: relative;
   width: 100%;
 }
 @media screen and (min-width: 380px) {
-  .section__wrapper--secrets {
+  .viber-landing .section__wrapper--secrets {
     width: 320px;
   }
 }
-.section__wrapper--calendar {
+.viber-landing .section__wrapper--calendar {
   display: none;
   position: relative;
   max-width: 460px;
@@ -926,11 +911,11 @@ ul {
   background-image: linear-gradient(45deg, rgba(19, 128, 246, 0.3019607843) 0%, rgba(120, 96, 242, 0.3019607843) 25%, rgba(120, 96, 242, 0.3019607843) 58%);
 }
 @media screen and (min-width: 1650px) {
-  .section__wrapper--calendar {
+  .viber-landing .section__wrapper--calendar {
     display: block;
   }
 }
-.section__wrapper--calendar-down {
+.viber-landing .section__wrapper--calendar-down {
   position: relative;
   width: 100%;
   margin-top: 210px;
@@ -939,18 +924,18 @@ ul {
   display: block;
 }
 @media screen and (min-width: 1280px) {
-  .section__wrapper--calendar-down {
+  .viber-landing .section__wrapper--calendar-down {
     border-radius: 10px;
     border: none;
   }
 }
 @media screen and (min-width: 1650px) {
-  .section__wrapper--calendar-down {
+  .viber-landing .section__wrapper--calendar-down {
     display: none;
   }
 }
 
-.hero {
+.viber-landing .hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -966,42 +951,42 @@ ul {
           flex-direction: column;
 }
 @media screen and (min-width: 1280px) {
-  .hero {
+  .viber-landing .hero {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
 }
-.hero__image {
+.viber-landing .hero__image {
   margin-bottom: -2px;
   max-width: 828px;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .hero__wrapper {
+  .viber-landing .hero__wrapper {
     max-width: 420px;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 1280px) {
-  .hero__wrapper {
+  .viber-landing .hero__wrapper {
     margin-right: 30px;
   }
 }
 @media screen and (min-width: 1650px) {
-  .hero__wrapper {
+  .viber-landing .hero__wrapper {
     max-width: 520px;
   }
 }
-.hero__text {
+.viber-landing .hero__text {
   color: #ffffff;
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
-  .hero__text {
+  .viber-landing .hero__text {
     color: #000000;
     font-weight: 600;
     font-size: 25px;
@@ -1009,47 +994,47 @@ ul {
   }
 }
 @media screen and (min-width: 1920px) {
-  .hero__text {
+  .viber-landing .hero__text {
     font-size: 40px;
     margin-bottom: 75px;
   }
 }
-.hero__title {
+.viber-landing .hero__title {
   font-weight: 700;
   font-size: 32px;
   color: #ffffff;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
-  .hero__title {
+  .viber-landing .hero__title {
     color: #000000;
     font-size: 36px;
   }
 }
 @media screen and (min-width: 1920px) {
-  .hero__title {
+  .viber-landing .hero__title {
     font-size: 48px;
   }
 }
-.hero__span {
+.viber-landing .hero__span {
   font-weight: 700;
   font-size: 32px;
   color: #ffffff;
 }
 @media screen and (min-width: 768px) {
-  .hero__span {
+  .viber-landing .hero__span {
     font-weight: 800;
     color: #7860f2;
     font-size: 36px;
   }
 }
 @media screen and (min-width: 1920px) {
-  .hero__span {
+  .viber-landing .hero__span {
     font-size: 48px;
   }
 }
 
-.contact-button {
+.viber-landing .contact-button {
   width: 100%;
   height: 80px;
   padding: 30px 15px;
@@ -1084,17 +1069,17 @@ ul {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 380px) {
-  .contact-button {
+  .viber-landing .contact-button {
     width: 340px;
     height: 80px;
     padding: 30px 0;
   }
 }
-.contact-button:hover, .contact-button:focus {
+.viber-landing .contact-button:hover, .viber-landing .contact-button:focus {
   -webkit-box-shadow: 0 10px 32px rgba(255, 134, 47, 0.5411764706);
           box-shadow: 0 10px 32px rgba(255, 134, 47, 0.5411764706);
 }
-.contact-button--small {
+.viber-landing .contact-button--small {
   width: 180px;
   height: 40px;
   padding: 10px 0;
@@ -1102,12 +1087,12 @@ ul {
   font-weight: 700;
 }
 @media screen and (max-width: 330px) {
-  .contact-button--small {
+  .viber-landing .contact-button--small {
     width: auto;
   }
 }
 @media screen and (min-width: 768px) {
-  .contact-button--small {
+  .viber-landing .contact-button--small {
     width: 240px;
     height: 60px;
     padding: 20px 0;
@@ -1116,33 +1101,33 @@ ul {
   }
 }
 @media screen and (min-width: 1650px) {
-  .contact-button--small {
+  .viber-landing .contact-button--small {
     width: 340px;
     height: 80px;
     padding: 30px 0;
     font-size: 18px;
   }
 }
-.contact-button__icon {
+.viber-landing .contact-button__icon {
   width: 18px;
   height: 18px;
   margin-left: 25px;
 }
 @media screen and (min-width: 1920px) {
-  .contact-button__icon {
+  .viber-landing .contact-button__icon {
     width: 22px;
     height: 22px;
     margin-left: 35px;
   }
 }
-.contact-button--secondary {
+.viber-landing .contact-button--secondary {
   background-image: -webkit-gradient(linear, left top, right top, from(#1380f6), to(#7860f2));
   background-image: linear-gradient(to right, #1380f6, #7860f2);
   -webkit-box-shadow: 0 30px 32px rgba(120, 96, 242, 0.3490196078);
           box-shadow: 0 30px 32px rgba(120, 96, 242, 0.3490196078);
 }
 @media screen and (min-width: 768px) {
-  .contact-button--secondary {
+  .viber-landing .contact-button--secondary {
     width: 240px;
     height: 60px;
     padding: 20px 0;
@@ -1151,28 +1136,28 @@ ul {
   }
 }
 @media screen and (min-width: 1650px) {
-  .contact-button--secondary {
+  .viber-landing .contact-button--secondary {
     width: 340px;
     height: 80px;
     padding: 30px 0;
     font-size: 18px;
   }
 }
-.contact-button--secondary:hover, .contact-button--secondary:focus {
+.viber-landing .contact-button--secondary:hover, .viber-landing .contact-button--secondary:focus {
   -webkit-box-shadow: 0 10px 32px rgba(120, 96, 242, 0.3490196078);
           box-shadow: 0 10px 32px rgba(120, 96, 242, 0.3490196078);
 }
-.contact-button--up {
+.viber-landing .contact-button--up {
   display: none;
 }
 @media screen and (min-width: 1280px) {
-  .contact-button--up {
+  .viber-landing .contact-button--up {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
-.contact-button--down {
+.viber-landing .contact-button--down {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1180,12 +1165,11 @@ ul {
   margin-top: 15px;
 }
 @media screen and (min-width: 1280px) {
-  .contact-button--down {
+  .viber-landing .contact-button--down {
     display: none;
   }
 }
-
-.contact-button::before {
+.viber-landing .contact-button::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -1201,12 +1185,10 @@ ul {
   border-radius: 8px;
   border: none;
 }
-
-.contact-button:hover::before {
+.viber-landing .contact-button:hover::before {
   opacity: 1;
 }
-
-.contact-button--secondary::before {
+.viber-landing .contact-button--secondary::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -1222,12 +1204,11 @@ ul {
   border-radius: 8px;
   border: none;
 }
-
-.contact-button--secondary:hover::before {
+.viber-landing .contact-button--secondary:hover::before {
   opacity: 1;
 }
 
-.banner {
+.viber-landing .banner {
   padding: 75px 15px 100px 15px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1240,11 +1221,11 @@ ul {
   background-image: linear-gradient(45deg, #1380f6 0%, #7860f2 25%, #7860f2 58%);
 }
 @media screen and (min-width: 1280px) {
-  .banner {
+  .viber-landing .banner {
     padding: 100px 15px 115px 15px;
   }
 }
-.banner__title {
+.viber-landing .banner__title {
   max-width: 800px;
   color: #ffffff;
   line-height: 140%;
@@ -1253,33 +1234,33 @@ ul {
   margin-bottom: 20px;
 }
 @media screen and (min-width: 1280px) {
-  .banner__title {
+  .viber-landing .banner__title {
     font-weight: 600;
     font-size: 26px;
   }
 }
 @media screen and (min-width: 1920px) {
-  .banner__title {
+  .viber-landing .banner__title {
     font-size: 32px;
     margin-bottom: 35px;
   }
 }
-.banner__title--secondary {
+.viber-landing .banner__title--secondary {
   text-transform: uppercase;
   margin-bottom: 45px;
 }
 @media screen and (min-width: 1280px) {
-  .banner__title--secondary {
+  .viber-landing .banner__title--secondary {
     margin-bottom: 50px;
   }
 }
 @media screen and (min-width: 1920px) {
-  .banner__title--secondary {
+  .viber-landing .banner__title--secondary {
     margin-bottom: 60px;
   }
 }
 
-.faq {
+.viber-landing .faq {
   padding: 115px 25px 60px 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1293,48 +1274,48 @@ ul {
           align-items: center;
 }
 @media screen and (min-width: 1280px) {
-  .faq {
+  .viber-landing .faq {
     padding: 50px 170px 70px 170px;
   }
 }
 @media screen and (min-width: 1920px) {
-  .faq {
+  .viber-landing .faq {
     padding: 100px 370px 130px 370px;
   }
 }
-.faq__title {
+.viber-landing .faq__title {
   margin-bottom: 50px;
   font-weight: 600;
   font-size: 28px;
   line-height: 140%;
 }
 @media screen and (min-width: 768px) {
-  .faq__title {
+  .viber-landing .faq__title {
     font-size: 32px;
   }
 }
 @media screen and (min-width: 1920px) {
-  .faq__title {
+  .viber-landing .faq__title {
     margin-bottom: 100px;
   }
 }
-.faq__title--secondary {
+.viber-landing .faq__title--secondary {
   margin-bottom: 0;
   font-size: 20px;
   font-weight: 700;
 }
 @media screen and (min-width: 768px) {
-  .faq__title--secondary {
+  .viber-landing .faq__title--secondary {
     font-size: 22px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .faq__title--secondary {
+  .viber-landing .faq__title--secondary {
     margin-right: 20px;
     font-size: 24px;
   }
 }
-.faq__list {
+.viber-landing .faq__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1345,17 +1326,17 @@ ul {
   gap: 10px;
 }
 @media screen and (min-width: 768px) {
-  .faq__list {
+  .viber-landing .faq__list {
     gap: 15px;
   }
 }
 @media screen and (min-width: 1920px) {
-  .faq__list {
+  .viber-landing .faq__list {
     margin-right: 0;
     width: 1200px;
   }
 }
-.faq__item {
+.viber-landing .faq__item {
   color: #000000;
   padding: 25px;
   border-radius: 10px;
@@ -1366,15 +1347,15 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1280px) {
-  .faq__item {
+  .viber-landing .faq__item {
     color: rgba(0, 0, 0, 0.368627451);
   }
 }
-.faq__item--active {
+.viber-landing .faq__item--active {
   background-image: linear-gradient(45deg, rgba(19, 128, 246, 0.3019607843) 0%, rgba(120, 96, 242, 0.3019607843) 25%, rgba(120, 96, 242, 0.3019607843) 58%);
   color: #000000;
 }
-.faq__wrapper {
+.viber-landing .faq__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1385,25 +1366,25 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.faq__wrapper--margin {
+.viber-landing .faq__wrapper--margin {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1280px) {
-  .faq__wrapper--margin {
+  .viber-landing .faq__wrapper--margin {
     margin-bottom: 20px;
   }
 }
-.faq__img {
+.viber-landing .faq__img {
   width: 40px;
   height: 40px;
   display: none;
 }
 @media screen and (min-width: 1280px) {
-  .faq__img {
+  .viber-landing .faq__img {
     display: block;
   }
 }
-.faq__text {
+.viber-landing .faq__text {
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
@@ -1411,7 +1392,7 @@ ul {
   text-align: start;
 }
 @media screen and (min-width: 1280px) {
-  .faq__text {
+  .viber-landing .faq__text {
     padding-right: 100px;
   }
 }/*# sourceMappingURL=index.css.map */

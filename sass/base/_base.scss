@@ -1,66 +1,60 @@
-html {
-  scroll-behavior: smooth;
-}
-.body-scroll-lock {
-  overflow: hidden;
-}
-body {
+.viber-landing {
   position: relative;
-  background-color: $main-background;
   color: $main-text;
   font-family: "Montserrat", arial, sans-serif;
-}
+  scroll-behavior: smooth;
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  max-height: 0;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
+  .visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    max-height: 0;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-img,
-ul {
-  margin: 0;
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a,
+  img,
+  ul {
+    margin: 0;
+  }
 
-a {
-  text-decoration: none;
-  padding: 0px;
-}
+  a {
+    text-decoration: none;
+    padding: 0px;
+  }
 
-p {
-  padding: 0px;
-}
+  p {
+    padding: 0px;
+  }
 
-img {
-  display: block;
-  max-width: 100%;
-  width: 100%;
-  height: 100%;
-}
+  img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+  }
 
-picture {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+  picture {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
 
-ul {
-  list-style: none;
-  padding: 0;
+  ul {
+    list-style: none;
+    padding: 0;
+  }
 }

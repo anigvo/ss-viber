@@ -1,100 +1,102 @@
-.faq {
-  padding: 115px 25px 60px 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  @media screen and (min-width: $laptop) {
-    padding: 50px 170px 70px 170px;
-  }
-  @media screen and (min-width: $desktop) {
-    padding: 100px 370px 130px 370px;
-  }
-
-  &__title {
-    margin-bottom: 50px;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 140%;
-    @media screen and (min-width: $tablet) {
-      font-size: 32px;
-    }
-    @media screen and (min-width: $desktop) {
-      margin-bottom: 100px;
-    }
-
-    &--secondary {
-      margin-bottom: 0;
-      font-size: 20px;
-      font-weight: 700;
-      @media screen and (min-width: $tablet) {
-        font-size: 22px;
-      }
-      @media screen and (min-width: $laptop) {
-        margin-right: 20px;
-        font-size: 24px;
-      }
-    }
-  }
-  &__list {
+.viber-landing {
+  .faq {
+    padding: 115px 25px 60px 25px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    @media screen and (min-width: $tablet) {
-      gap: 15px;
+    align-items: center;
+    @media screen and (min-width: $laptop) {
+      padding: 50px 170px 70px 170px;
     }
     @media screen and (min-width: $desktop) {
-      margin-right: 0;
-      width: 1200px;
+      padding: 100px 370px 130px 370px;
     }
-  }
-  &__item {
-    color: $main-text;
-    padding: 25px;
-    border-radius: 10px;
-    border: none;
-    background-color: $main-background;
-    cursor: pointer;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    @media screen and (min-width: $laptop) {
-      color: $main-text-transparent;
-    }
-    &--active {
-      background-image: linear-gradient(
-        45deg,
-        $blue-violet-1-transparent 0%,
-        $blue-violet-2-transparent 25%,
-        $blue-violet-2-transparent 58%
-      );
-      color: $main-text;
-    }
-  }
-  &__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    &--margin {
-      margin-bottom: 30px;
-      @media screen and (min-width: $laptop) {
-        margin-bottom: 20px;
+
+    &__title {
+      margin-bottom: 50px;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 140%;
+      @media screen and (min-width: $tablet) {
+        font-size: 32px;
+      }
+      @media screen and (min-width: $desktop) {
+        margin-bottom: 100px;
+      }
+
+      &--secondary {
+        margin-bottom: 0;
+        font-size: 20px;
+        font-weight: 700;
+        @media screen and (min-width: $tablet) {
+          font-size: 22px;
+        }
+        @media screen and (min-width: $laptop) {
+          margin-right: 20px;
+          font-size: 24px;
+        }
       }
     }
-  }
-  &__img {
-    width: 40px;
-    height: 40px;
-    display: none;
-    @media screen and (min-width: $laptop) {
-      display: block;
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      @media screen and (min-width: $tablet) {
+        gap: 15px;
+      }
+      @media screen and (min-width: $desktop) {
+        margin-right: 0;
+        width: 1200px;
+      }
     }
-  }
-  &__text {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 150%;
-    max-width: 1000px;
-    text-align: start;
-    @media screen and (min-width: $laptop) {
-      padding-right: 100px;
+    &__item {
+      color: $main-text;
+      padding: 25px;
+      border-radius: 10px;
+      border: none;
+      background-color: $main-background;
+      cursor: pointer;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      @media screen and (min-width: $laptop) {
+        color: $main-text-transparent;
+      }
+      &--active {
+        background-image: linear-gradient(
+          45deg,
+          $blue-violet-1-transparent 0%,
+          $blue-violet-2-transparent 25%,
+          $blue-violet-2-transparent 58%
+        );
+        color: $main-text;
+      }
+    }
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &--margin {
+        margin-bottom: 30px;
+        @media screen and (min-width: $laptop) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    &__img {
+      width: 40px;
+      height: 40px;
+      display: none;
+      @media screen and (min-width: $laptop) {
+        display: block;
+      }
+    }
+    &__text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+      max-width: 1000px;
+      text-align: start;
+      @media screen and (min-width: $laptop) {
+        padding-right: 100px;
+      }
     }
   }
 }

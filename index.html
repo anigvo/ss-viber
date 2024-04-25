@@ -13,314 +13,427 @@
   </head>
 
   <body>
-    <div class="pre-background">
-      <div class="background"></div>
-      <header class="header">
-        <div class="container header__container">
-          <a
-            href="https://console.smartsender.com"
-            aria-label="SmartSender Logo"
-            ><svg class="header__logo">
-              <use href="./images/svg/sprite.svg#logo"></use></svg
-            ><svg class="header__logo-white">
-              <use href="./images/svg/sprite.svg#logo-white"></use></svg
-          ></a>
+    <div class="viber-landing">
+      <div class="pre-background">
+        <div class="background"></div>
+        <header class="header">
+          <div class="container header__container">
+            <a
+              href="https://console.smartsender.com"
+              aria-label="SmartSender Logo"
+              ><svg class="header__logo">
+                <use href="./images/svg/sprite.svg#logo"></use></svg
+              ><svg class="header__logo-white">
+                <use href="./images/svg/sprite.svg#logo-white"></use></svg
+            ></a>
 
-          <div class="header__wrapper">
-            <nav class="header__nav">
-              <ul class="header__list">
-                <li class="header__item">
-                  <a href="#steps" class="header__link">Подключение</a>
-                </li>
-                <li class="header__item">
-                  <a href="#opportunity" class="header__link">Возможности</a>
-                </li>
-                <li class="header__item">
-                  <a href="#secrets" class="header__link">Секреты</a>
-                </li>
-                <li class="header__item">
-                  <a href="#faq" class="header__link">FAQ</a>
-                </li>
-              </ul>
-            </nav>
+            <div class="header__wrapper">
+              <nav class="header__nav">
+                <ul class="header__list">
+                  <li class="header__item">
+                    <a href="#steps" class="header__link">Подключение</a>
+                  </li>
+                  <li class="header__item">
+                    <a href="#opportunity" class="header__link">Возможности</a>
+                  </li>
+                  <li class="header__item">
+                    <a href="#secrets" class="header__link">Секреты</a>
+                  </li>
+                  <li class="header__item">
+                    <a href="#faq" class="header__link">FAQ</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <a
+                class="contact-button contact-button--small header__button"
+                target="_blank"
+                href="https://console.smartsender.com"
+                >Связаться с нами</a
+              >
+            </div>
+          </div>
+        </header>
+
+        <section class="hero container">
+          <div class="hero__wrapper">
+            <h1 class="hero__title">
+              Коммерческие чат-боты в <span class="hero__span">Viber</span> —
+            </h1>
+            <p class="hero__text">умное решение для вашего бизнеса</p>
 
             <a
-              class="contact-button contact-button--small header__button"
+              class="contact-button contact-button--secondary contact-button--up"
               target="_blank"
               href="https://console.smartsender.com"
-              >Связаться с нами</a
-            >
+              ><span>Подать заявку сейчас</span>
+              <svg class="contact-button__icon">
+                <use href="./images/svg/sprite.svg#arrow"></use></svg
+            ></a>
           </div>
-        </div>
-      </header>
-
-      <section class="hero container">
-        <div class="hero__wrapper">
-          <h1 class="hero__title">
-            Коммерческие чат-боты в <span class="hero__span">Viber</span> —
-          </h1>
-          <p class="hero__text">умное решение для вашего бизнеса</p>
+          <picture class="hero__image">
+            <source
+              srcset="
+                ./images/frames/girl-mobile.png    1x,
+                ./images/frames/girl-mobile@2x.png 2x
+              "
+              type="image/png"
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="
+                ./images/frames/girl.png    1x,
+                ./images/frames/girl@2x.png 2x
+              "
+              type="image/png"
+              media="(min-width: 768px)"
+            />
+            <img src="./images/frames/girl.png" alt="Girl with phone" />
+          </picture>
 
           <a
-            class="contact-button contact-button--secondary contact-button--up"
+            class="contact-button contact-button--secondary contact-button--down"
             target="_blank"
             href="https://console.smartsender.com"
             ><span>Подать заявку сейчас</span>
             <svg class="contact-button__icon">
               <use href="./images/svg/sprite.svg#arrow"></use></svg
           ></a>
+        </section>
+      </div>
+
+      <section class="section container container--off">
+        <div class="section__about">
+          <p class="section__text section__text--margin">
+            <span class="section__text--span">Viber</span> предоставляет удобную
+            и мощную платформу для взаимодействия с пользователями по всему
+            миру.
+          </p>
+          <p class="section__text">
+            <span class="section__text--span"
+              >Коммерческие чат-боты в Viber</span
+            >
+            — незаменимый инструмент для бизнеса, позволяющий автоматизировать
+            рутинные процессы. Они обеспечивают персонализированные
+            коммуникации, мгновенное реагирование на запросы пользователей и
+            круглосуточную поддержку. Начните зарабатывать при помощи
+            коммерческой модели чат-ботов прямо сейчас!
+          </p>
+          <picture class="section__img section__img--viber">
+            <source
+              srcset="./images/Viber.png 1x, ./images/Viber@2x.png 2x"
+              type="image/png"
+            />
+            <img src="./images/Viber.png" alt="Viber" />
+          </picture>
         </div>
-        <picture class="hero__image">
+
+        <div class="section__clients">
+          <h2 class="section__title section__title--clients">
+            <span class="section__title--span">3 из 4 Клиентов</span>
+            предпочитают задавать вопросы компании в чате
+          </h2>
+          <p class="section__text">
+            Согласно новым правилам
+            <span class="section__text--span">Viber</span>, создать
+            коммерческого чат-бота можно только через официальных партнёров
+            Rakuten Viber.
+          </p>
+          <ul class="section__list section__list--clients">
+            <li class="section__item section__item--clients">
+              <picture class="section__img--clients">
+                <source
+                  srcset="
+                    ./images/clients/client1.png    1x,
+                    ./images/clients/client1@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <img src="./images/clients/client1.png" alt="Client 1" />
+              </picture>
+            </li>
+            <li class="section__item section__item--clients">
+              <picture class="section__img--clients">
+                <source
+                  srcset="
+                    ./images/clients/client2.png    1x,
+                    ./images/clients/client2@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <img src="./images/clients/client2.png" alt="Client 2" />
+              </picture>
+            </li>
+            <li class="section__item section__item--clients">
+              <picture class="section__img--clients">
+                <source
+                  srcset="
+                    ./images/clients/client3.png    1x,
+                    ./images/clients/client3@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <img src="./images/clients/client3.png" alt="Client 3" />
+              </picture>
+            </li>
+
+            <li class="section__item section__item--clients">
+              <picture class="section__img--clients">
+                <source
+                  srcset="
+                    ./images/clients/client4.png    1x,
+                    ./images/clients/client4@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <img src="./images/clients/client4.png" alt="Client 4" />
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section container section--gray section--padding">
+        <div class="section__bots">
+          <h2 class="section__title">
+            Максимизируйте ваши возможности с
+            <span class="section__title--span">коммерческими чат-ботами</span>
+          </h2>
+          <p class="section__text section__text--margin">
+            <span class="section__text--span">Освободитесь от ограничений</span>
+            бесплатных чат-ботов в 10 000 сообщений в месяц. Переход на
+            коммерческий план откроет вам неограниченные возможности в общении с
+            клиентами
+          </p>
+          <p class="section__text">
+            <span class="section__text--span"
+              >Команда Smart Sender обеспечит поддержку</span
+            >
+            и экспертное руководство на каждом этапе. Не упускайте возможность
+            сделать больше для вашего бизнеса — переходите на коммерческие
+            чат-боты уже сегодня!
+          </p>
+        </div>
+        <picture class="section__img section__img--messenger">
           <source
             srcset="
-              ./images/frames/girl-mobile.png    1x,
-              ./images/frames/girl-mobile@2x.png 2x
+              ./images/frames/messenger-frame.png    1x,
+              ./images/frames/messenger-frame@2x.png 2x
             "
             type="image/png"
-            media="(max-width: 767px)"
           />
-          <source
-            srcset="./images/frames/girl.png 1x, ./images/frames/girl@2x.png 2x"
-            type="image/png"
-            media="(min-width: 768px)"
-          />
-          <img src="./images/frames/girl.png" alt="Girl with phone" />
+
+          <img src="./images/frames/messenger-frame.png" alt="Messenger" />
         </picture>
+      </section>
+
+      <section class="section section--reverse container" id="steps">
+        <picture class="section__img section__img--phone">
+          <source
+            srcset="
+              ./images/frames/phone-frame.png    1x,
+              ./images/frames/phone-frame@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            src="./images/frames/phone-frame.png"
+            alt="Phone and Viber app"
+          />
+        </picture>
+        <div class="section__steps">
+          <h2 class="section__title section__title--steps">
+            <span class="section__title--span">Шаги подключения</span>
+            коммерческого чат-бота в Viber
+          </h2>
+          <ul class="section__list section__list--steps">
+            <li
+              class="section__item section__item--steps section__item--active"
+            >
+              <p class="section__text">
+                <span class="section__text--span">Шаг 1. </span
+                ><a href="https://console.smartsender.com" class="section__link"
+                  >Обратиться к Smart Sender</a
+                >
+                — официальному партнёру Viber.
+              </p>
+              <img
+                class="section__icon"
+                src="./images/svg/point.svg"
+                alt="List point"
+              />
+            </li>
+
+            <li class="section__item section__item--steps">
+              <p class="section__text section__text--steps">
+                <span class="section__text--span">Шаг 2. </span>Оплатить
+                активационный взнос.
+              </p>
+            </li>
+            <li class="section__item section__item--steps">
+              <p class="section__text section__text--steps">
+                <span class="section__text--span">Шаг 3. </span>Заполнить
+                анкету.
+              </p>
+            </li>
+            <li class="section__item section__item--steps">
+              <p class="section__text section__text--steps">
+                <span class="section__text--span">Шаг 4. </span>Ожидать
+                активацию бота.
+              </p>
+            </li>
+            <li class="section__item section__item--steps">
+              <p class="section__text section__text--steps">
+                <span class="section__text--span">Шаг 5. </span>Сделать апгрейд
+                своих воронок продаж для повышения эффективности бизнеса.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="banner section">
+        <h2 class="banner__title">
+          Сделайте свой первый шаг к эффективному использованию коммерческого
+          чат-бота —
+        </h2>
+        <h3 class="banner__title banner__title--secondary">
+          подайте заявку прямо сейчас!
+        </h3>
 
         <a
-          class="contact-button contact-button--secondary contact-button--down"
+          class="contact-button"
           target="_blank"
           href="https://console.smartsender.com"
-          ><span>Подать заявку сейчас</span>
-          <svg class="contact-button__icon">
-            <use href="./images/svg/sprite.svg#arrow"></use></svg
-        ></a>
+          >Подать заявку</a
+        >
       </section>
-    </div>
 
-    <section class="section container container--off">
-      <div class="section__about">
-        <p class="section__text section__text--margin">
-          <span class="section__text--span">Viber</span> предоставляет удобную и
-          мощную платформу для взаимодействия с пользователями по всему миру.
-        </p>
-        <p class="section__text">
-          <span class="section__text--span">Коммерческие чат-боты в Viber</span>
-          — незаменимый инструмент для бизнеса, позволяющий автоматизировать
-          рутинные процессы. Они обеспечивают персонализированные коммуникации,
-          мгновенное реагирование на запросы пользователей и круглосуточную
-          поддержку. Начните зарабатывать при помощи коммерческой модели
-          чат-ботов прямо сейчас!
-        </p>
-        <picture class="section__img section__img--viber">
-          <source
-            srcset="./images/Viber.png 1x, ./images/Viber@2x.png 2x"
-            type="image/png"
-          />
-          <img src="./images/Viber.png" alt="Viber" />
-        </picture>
-      </div>
-
-      <div class="section__clients">
-        <h2 class="section__title section__title--clients">
-          <span class="section__title--span">3 из 4 Клиентов</span>
-          предпочитают задавать вопросы компании в чате
-        </h2>
-        <p class="section__text">
-          Согласно новым правилам
-          <span class="section__text--span">Viber</span>, создать коммерческого
-          чат-бота можно только через официальных партнёров Rakuten Viber.
-        </p>
-        <ul class="section__list section__list--clients">
-          <li class="section__item section__item--clients">
-            <picture class="section__img--clients">
-              <source
-                srcset="
-                  ./images/clients/client1.png    1x,
-                  ./images/clients/client1@2x.png 2x
-                "
-                type="image/png"
-              />
-              <img src="./images/clients/client1.png" alt="Client 1" />
-            </picture>
-          </li>
-          <li class="section__item section__item--clients">
-            <picture class="section__img--clients">
-              <source
-                srcset="
-                  ./images/clients/client2.png    1x,
-                  ./images/clients/client2@2x.png 2x
-                "
-                type="image/png"
-              />
-              <img src="./images/clients/client2.png" alt="Client 2" />
-            </picture>
-          </li>
-          <li class="section__item section__item--clients">
-            <picture class="section__img--clients">
-              <source
-                srcset="
-                  ./images/clients/client3.png    1x,
-                  ./images/clients/client3@2x.png 2x
-                "
-                type="image/png"
-              />
-              <img src="./images/clients/client3.png" alt="Client 3" />
-            </picture>
-          </li>
-
-          <li class="section__item section__item--clients">
-            <picture class="section__img--clients">
-              <source
-                srcset="
-                  ./images/clients/client4.png    1x,
-                  ./images/clients/client4@2x.png 2x
-                "
-                type="image/png"
-              />
-              <img src="./images/clients/client4.png" alt="Client 4" />
-            </picture>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section container section--gray section--padding">
-      <div class="section__bots">
-        <h2 class="section__title">
-          Максимизируйте ваши возможности с
-          <span class="section__title--span">коммерческими чат-ботами</span>
-        </h2>
-        <p class="section__text section__text--margin">
-          <span class="section__text--span">Освободитесь от ограничений</span>
-          бесплатных чат-ботов в 10 000 сообщений в месяц. Переход на
-          коммерческий план откроет вам неограниченные возможности в общении с
-          клиентами
-        </p>
-        <p class="section__text">
-          <span class="section__text--span"
-            >Команда Smart Sender обеспечит поддержку</span
-          >
-          и экспертное руководство на каждом этапе. Не упускайте возможность
-          сделать больше для вашего бизнеса — переходите на коммерческие
-          чат-боты уже сегодня!
-        </p>
-      </div>
-      <picture class="section__img section__img--messenger">
-        <source
-          srcset="
-            ./images/frames/messenger-frame.png    1x,
-            ./images/frames/messenger-frame@2x.png 2x
-          "
-          type="image/png"
-        />
-
-        <img src="./images/frames/messenger-frame.png" alt="Messenger" />
-      </picture>
-    </section>
-
-    <section class="section section--reverse container" id="steps">
-      <picture class="section__img section__img--phone">
-        <source
-          srcset="
-            ./images/frames/phone-frame.png    1x,
-            ./images/frames/phone-frame@2x.png 2x
-          "
-          type="image/png"
-        />
-        <img src="./images/frames/phone-frame.png" alt="Phone and Viber app" />
-      </picture>
-      <div class="section__steps">
-        <h2 class="section__title section__title--steps">
-          <span class="section__title--span">Шаги подключения</span>
-          коммерческого чат-бота в Viber
-        </h2>
-        <ul class="section__list section__list--steps">
-          <li class="section__item section__item--steps section__item--active">
-            <p class="section__text">
-              <span class="section__text--span">Шаг 1. </span
-              ><a href="https://console.smartsender.com" class="section__link"
-                >Обратиться к Smart Sender</a
-              >
-              — официальному партнёру Viber.
-            </p>
-            <img
-              class="section__icon"
-              src="./images/svg/point.svg"
-              alt="List point"
-            />
-          </li>
-
-          <li class="section__item section__item--steps">
-            <p class="section__text section__text--steps">
-              <span class="section__text--span">Шаг 2. </span>Оплатить
-              активационный взнос.
-            </p>
-          </li>
-          <li class="section__item section__item--steps">
-            <p class="section__text section__text--steps">
-              <span class="section__text--span">Шаг 3. </span>Заполнить анкету.
-            </p>
-          </li>
-          <li class="section__item section__item--steps">
-            <p class="section__text section__text--steps">
-              <span class="section__text--span">Шаг 4. </span>Ожидать активацию
-              бота.
-            </p>
-          </li>
-          <li class="section__item section__item--steps">
-            <p class="section__text section__text--steps">
-              <span class="section__text--span">Шаг 5. </span>Сделать апгрейд
-              своих воронок продаж для повышения эффективности бизнеса.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="banner section">
-      <h2 class="banner__title">
-        Сделайте свой первый шаг к эффективному использованию коммерческого
-        чат-бота —
-      </h2>
-      <h3 class="banner__title banner__title--secondary">
-        подайте заявку прямо сейчас!
-      </h3>
-
-      <a
-        class="contact-button"
-        target="_blank"
-        href="https://console.smartsender.com"
-        >Подать заявку</a
+      <section
+        class="section container section--gray section__limitations container--off"
       >
-    </section>
+        <h2 class="section__title section__title--limitations">
+          <span class="section__title--span">Ограничения </span>при создании
+          чат-бота в Viber — не проблема, если у вас есть надёжный партнер
+        </h2>
+        <div class="section__wrapper">
+          <p class="section__text section__text--limitations">
+            Подключение чат-ботов через официальных партнёров становится
+            критической необходимостью в контексте введения новых правил Viber,
+            <span class="section__text--span">
+              действующих с 5 февраля 2024 года</span
+            >
+          </p>
+          <div class="section__wrapper--calendar">
+            <p class="section__text">
+              <span class="section__text--span">Smart Sender</span> — это
+              быстрое подключение чат-бота, квалифицированная техническая
+              поддержка и консультации в случае возникновения вопросов или
+              проблем.
+            </p>
+            <picture class="section__img section__img--calendar">
+              <source
+                srcset="
+                  ./images/frames/calendar-frame.png    1x,
+                  ./images/frames/calendar-frame@2x.png 2x
+                "
+                type="image/png"
+              />
+              <img
+                src="./images/frames/phone-frame.png"
+                alt="Calendar with stripes"
+              />
+            </picture>
+          </div>
+        </div>
 
-    <section
-      class="section container section--gray section__limitations container--off"
-    >
-      <h2 class="section__title section__title--limitations">
-        <span class="section__title--span">Ограничения </span>при создании
-        чат-бота в Viber — не проблема, если у вас есть надёжный партнер
-      </h2>
-      <div class="section__wrapper">
-        <p class="section__text section__text--limitations">
-          Подключение чат-ботов через официальных партнёров становится
-          критической необходимостью в контексте введения новых правил Viber,
-          <span class="section__text--span">
-            действующих с 5 февраля 2024 года</span
-          >
-        </p>
-        <div class="section__wrapper--calendar">
+        <ul class="section__list section__list--limitations">
+          <li class="section__item section__item--limitations">
+            <h3
+              class="section__title section__title--secondary section__title--semibold"
+            >
+              «Своими силами» подключить чат-бот в Viber
+              <span class="section__title--span section__title--semibold"
+                >невозможно</span
+              >
+            </h3>
+            <p class="section__text">
+              Опция самостоятельного подключения чат-бота недоступна
+              пользователям. Это возможно сделать только через официального
+              партнёра Rakuten Viber.
+            </p>
+            <picture class="section__img section__img--limitations">
+              <source
+                srcset="./images/NO.png 1x, ./images/NO@2x.png 2x"
+                type="image/png"
+              />
+              <img src="./images/NO.png" alt="List-point" />
+            </picture>
+          </li>
+
+          <li class="section__item section__item--limitations">
+            <h3
+              class="section__title section__title--secondary section__title--semibold"
+            >
+              В силу вступают новые
+              <span class="section__title--span section__title--semibold"
+                >тарифы</span
+              >
+            </h3>
+            <p class="section__text">
+              Чтобы перейти на коммерческую модель чат-бота, необходимо оплатить
+              активационный взнос 300 EUR. Каждый следующий календарный месяц
+              будет взиматься оплата за обслуживание - 100 EUR, а также оплата
+              за доставленные сообщения, инициированные чат-ботом.
+            </p>
+            <picture class="section__img section__img--limitations">
+              <source
+                srcset="./images/NO.png 1x, ./images/NO@2x.png 2x"
+                type="image/png"
+              />
+              <img src="./images/NO.png" alt="List-point" />
+            </picture>
+          </li>
+          <li class="section__item section__item--limitations">
+            <h3
+              class="section__title section__title--secondary section__title--semibold"
+            >
+              Действует ограничение
+              <span class="section__title--span section__title--semibold"
+                >по времени</span
+              >
+            </h3>
+            <p class="section__text">
+              При начале диалога с чат-ботом или ответе на его сообщение
+              активируется 24-часовая сессия, в течение которой сообщения
+              бесплатны. Однако за сообщения, отправленные за пределами этой
+              диалоговой сессии, взимается плата.
+              <span
+                ><a href="#faq" class="section__link"
+                  >Подробнее — в разделе FAQ</a
+                ></span
+              >
+            </p>
+            <picture class="section__img section__img--limitations">
+              <source
+                srcset="./images/NO.png 1x, ./images/NO@2x.png 2x"
+                type="image/png"
+              />
+              <img src="./images/NO.png" alt="List-point" />
+            </picture>
+          </li>
+        </ul>
+        <div class="section__wrapper--calendar-down">
           <p class="section__text">
             <span class="section__text--span">Smart Sender</span> — это быстрое
             подключение чат-бота, квалифицированная техническая поддержка и
             консультации в случае возникновения вопросов или проблем.
           </p>
-          <picture class="section__img section__img--calendar">
+          <picture class="section__img section__img--calendar-down">
             <source
               srcset="
-                ./images/frames/calendar-frame.png    1x,
-                ./images/frames/calendar-frame@2x.png 2x
+                ./images/frames/calendar-frame-down.png    1x,
+                ./images/frames/calendar-frame-down@2x.png 2x
               "
               type="image/png"
             />
@@ -330,366 +443,269 @@
             />
           </picture>
         </div>
-      </div>
+      </section>
 
-      <ul class="section__list section__list--limitations">
-        <li class="section__item section__item--limitations">
-          <h3
-            class="section__title section__title--secondary section__title--semibold"
-          >
-            «Своими силами» подключить чат-бот в Viber
-            <span class="section__title--span section__title--semibold"
-              >невозможно</span
-            >
-          </h3>
-          <p class="section__text">
-            Опция самостоятельного подключения чат-бота недоступна
-            пользователям. Это возможно сделать только через официального
-            партнёра Rakuten Viber.
-          </p>
-          <picture class="section__img section__img--limitations">
-            <source
-              srcset="./images/NO.png 1x, ./images/NO@2x.png 2x"
-              type="image/png"
+      <section class="section container section__opportunity" id="opportunity">
+        <h2 class="section__title section__title--opportunity">
+          Ключевые
+          <span class="section__title--span">возможности</span> коммерческих
+          чат-ботов
+        </h2>
+        <ul class="section__list section__list--opportunity">
+          <li class="section__item section__item--opportunity">
+            <img
+              class="section__img section__img--opportunity"
+              src="./images/svg/message-search.svg"
+              alt="Message"
             />
-            <img src="./images/NO.png" alt="List-point" />
-          </picture>
-        </li>
-
-        <li class="section__item section__item--limitations">
-          <h3
-            class="section__title section__title--secondary section__title--semibold"
-          >
-            В силу вступают новые
-            <span class="section__title--span section__title--semibold"
-              >тарифы</span
-            >
-          </h3>
-          <p class="section__text">
-            Чтобы перейти на коммерческую модель чат-бота, необходимо оплатить
-            активационный взнос 300 EUR. Каждый следующий календарный месяц
-            будет взиматься оплата за обслуживание - 100 EUR, а также оплата за
-            доставленные сообщения, инициированные чат-ботом.
-          </p>
-          <picture class="section__img section__img--limitations">
-            <source
-              srcset="./images/NO.png 1x, ./images/NO@2x.png 2x"
-              type="image/png"
+            <h3 class="section__title section__title--list">
+              Удобная коммуникация
+            </h3>
+            <p class="section__text">
+              Создание пользовательской клавиатуры с кнопками для повышения
+              вовлечённости и приятного опыта взаимодействия клиентов с вашей
+              компанией.
+            </p>
+          </li>
+          <li class="section__item section__item--opportunity">
+            <img
+              class="section__img section__img--opportunity"
+              src="./images/svg/24-support.svg"
+              alt="Message"
             />
-            <img src="./images/NO.png" alt="List-point" />
-          </picture>
-        </li>
-        <li class="section__item section__item--limitations">
-          <h3
-            class="section__title section__title--secondary section__title--semibold"
-          >
-            Действует ограничение
-            <span class="section__title--span section__title--semibold"
-              >по времени</span
-            >
-          </h3>
-          <p class="section__text">
-            При начале диалога с чат-ботом или ответе на его сообщение
-            активируется 24-часовая сессия, в течение которой сообщения
-            бесплатны. Однако за сообщения, отправленные за пределами этой
-            диалоговой сессии, взимается плата.
-            <span
-              ><a href="#faq" class="section__link"
-                >Подробнее — в разделе FAQ</a
-              ></span
-            >
-          </p>
-          <picture class="section__img section__img--limitations">
-            <source
-              srcset="./images/NO.png 1x, ./images/NO@2x.png 2x"
-              type="image/png"
+            <h3 class="section__title section__title--list">
+              Высокое качество обслуживания
+            </h3>
+            <p class="section__text">
+              Бот будет мгновенно отвечать на запросы и обрабатывать заказы,
+              обеспечивая высокий уровень обслуживания 24/7.
+            </p>
+          </li>
+          <li class="section__item section__item--opportunity">
+            <img
+              class="section__img section__img--opportunity"
+              src="./images/svg/dollar-square.svg"
+              alt="Message"
             />
-            <img src="./images/NO.png" alt="List-point" />
-          </picture>
-        </li>
-      </ul>
-      <div class="section__wrapper--calendar-down">
-        <p class="section__text">
-          <span class="section__text--span">Smart Sender</span> — это быстрое
-          подключение чат-бота, квалифицированная техническая поддержка и
-          консультации в случае возникновения вопросов или проблем.
-        </p>
-        <picture class="section__img section__img--calendar-down">
-          <source
-            srcset="
-              ./images/frames/calendar-frame-down.png    1x,
-              ./images/frames/calendar-frame-down@2x.png 2x
-            "
-            type="image/png"
-          />
-          <img
-            src="./images/frames/phone-frame.png"
-            alt="Calendar with stripes"
-          />
-        </picture>
-      </div>
-    </section>
+            <h3 class="section__title section__title--list">
+              Стимуляция роста продаж
+            </h3>
+            <p class="section__text">
+              Персонализированные рассылки, предложения скидок и акций, что
+              подстёгивает клиентов к совершению покупок.
+            </p>
+          </li>
+          <li class="section__item section__item--opportunity">
+            <img
+              class="section__img section__img--opportunity"
+              src="./images/svg/profile-2user.svg"
+              alt="Message"
+            />
+            <h3 class="section__title section__title--list">
+              Увеличение потока клиентов
+            </h3>
+            <p class="section__text">
+              С помощью чат-ботов вы сможете проводить эффективный онбординг
+              новой аудитории.
+            </p>
+          </li>
+        </ul>
+      </section>
 
-    <section class="section container section__opportunity" id="opportunity">
-      <h2 class="section__title section__title--opportunity">
-        Ключевые
-        <span class="section__title--span">возможности</span> коммерческих
-        чат-ботов
-      </h2>
-      <ul class="section__list section__list--opportunity">
-        <li class="section__item section__item--opportunity">
-          <img
-            class="section__img section__img--opportunity"
-            src="./images/svg/message-search.svg"
-            alt="Message"
-          />
-          <h3 class="section__title section__title--list">
-            Удобная коммуникация
-          </h3>
-          <p class="section__text">
-            Создание пользовательской клавиатуры с кнопками для повышения
-            вовлечённости и приятного опыта взаимодействия клиентов с вашей
-            компанией.
-          </p>
-        </li>
-        <li class="section__item section__item--opportunity">
-          <img
-            class="section__img section__img--opportunity"
-            src="./images/svg/24-support.svg"
-            alt="Message"
-          />
-          <h3 class="section__title section__title--list">
-            Высокое качество обслуживания
-          </h3>
-          <p class="section__text">
-            Бот будет мгновенно отвечать на запросы и обрабатывать заказы,
-            обеспечивая высокий уровень обслуживания 24/7.
-          </p>
-        </li>
-        <li class="section__item section__item--opportunity">
-          <img
-            class="section__img section__img--opportunity"
-            src="./images/svg/dollar-square.svg"
-            alt="Message"
-          />
-          <h3 class="section__title section__title--list">
-            Стимуляция роста продаж
-          </h3>
-          <p class="section__text">
-            Персонализированные рассылки, предложения скидок и акций, что
-            подстёгивает клиентов к совершению покупок.
-          </p>
-        </li>
-        <li class="section__item section__item--opportunity">
-          <img
-            class="section__img section__img--opportunity"
-            src="./images/svg/profile-2user.svg"
-            alt="Message"
-          />
-          <h3 class="section__title section__title--list">
-            Увеличение потока клиентов
-          </h3>
-          <p class="section__text">
-            С помощью чат-ботов вы сможете проводить эффективный онбординг новой
-            аудитории.
-          </p>
-        </li>
-      </ul>
-    </section>
+      <section class="banner section">
+        <h2 class="banner__title">
+          Готовы повысить эффективность вашего бизнеса со Smart Sender?
+        </h2>
+        <h3 class="banner__title banner__title--secondary">
+          Свяжитесь с нами сейчас, чтобы начать свой путь к успеху!
+        </h3>
 
-    <section class="banner section">
-      <h2 class="banner__title">
-        Готовы повысить эффективность вашего бизнеса со Smart Sender?
-      </h2>
-      <h3 class="banner__title banner__title--secondary">
-        Свяжитесь с нами сейчас, чтобы начать свой путь к успеху!
-      </h3>
+        <a
+          class="contact-button"
+          target="_blank"
+          href="https://console.smartsender.com"
+          >Подать заявку</a
+        >
+      </section>
 
-      <a
-        class="contact-button"
-        target="_blank"
-        href="https://console.smartsender.com"
-        >Подать заявку</a
-      >
-    </section>
+      <section class="section section__secrets container" id="secrets">
+        <ul class="section__list section__list--secrets">
+          <li class="section__item section__item--secrets">
+            <div class="section__wrapper--secrets">
+              <h2 class="section__title section__title--secrets">
+                <span class="section__title--span section__title--semibold"
+                  >Секреты эффективности</span
+                >
+                чат-ботов
+              </h2>
+              <picture class="section__img section__img--secrets">
+                <source
+                  srcset="
+                    ./images/frames/message-frame.png    1x,
+                    ./images/frames/message-frame@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <img
+                  src="./images/frames/phone-frame.png"
+                  alt="Message with stripe"
+                />
+              </picture>
+            </div>
+          </li>
 
-    <section class="section section__secrets container" id="secrets">
-      <ul class="section__list section__list--secrets">
-        <li class="section__item section__item--secrets">
-          <div class="section__wrapper--secrets">
-            <h2 class="section__title section__title--secrets">
-              <span class="section__title--span section__title--semibold"
-                >Секреты эффективности</span
-              >
-              чат-ботов
-            </h2>
-            <picture class="section__img section__img--secrets">
-              <source
-                srcset="
-                  ./images/frames/message-frame.png    1x,
-                  ./images/frames/message-frame@2x.png 2x
-                "
-                type="image/png"
+          <li class="section__item section__item--secrets">
+            <h3
+              class="section__title section__title--secondary section__title--margin section__title--violet"
+            >
+              Интеграция с CRM
+            </h3>
+            <p class="section__text">
+              Вы сможете собирать и анализировать информацию о клиентах, что
+              даст возможность сегментировать аудиторию и более точно
+              настраивать коммуникацию с каждой группой потенциальных клиентов.
+            </p>
+          </li>
+
+          <li class="section__item section__item--secrets">
+            <h3
+              class="section__title section__title--secondary section__title--margin section__title--violet"
+            >
+              Геймификация
+            </h3>
+            <p class="section__text">
+              Применение игровых механик превращает взаимодействие с вашей
+              компанией в увлекательный опыт. Это стимулирует пассивных
+              пользователей стать активными. Игровая механика с призами и
+              бонусами вдохновят клиентов на более частое взаимодействие с
+              компанией.
+            </p>
+          </li>
+
+          <li class="section__item section__item--secrets">
+            <h3
+              class="section__title section__title--secondary section__title--margin section__title--violet"
+            >
+              Сегментация и персонализация 
+            </h3>
+            <p class="section__text">
+              Данные базы клиентов будут использованы для определения сегментов
+              аудитории и создания персонализированных сообщений или
+              предложений. Учитывание индивидуальных потребностей и предпочтений
+              каждого пользователя увеличит конверсию.
+            </p>
+          </li>
+
+          <li class="section__item section__item--secrets">
+            <h3
+              class="section__title section__title--secondary section__title--margin section__title--violet"
+            >
+              Глубока связь с аудиторией 
+            </h3>
+            <p class="section__text">
+              Персонализированные сообщения, адаптированные под предпочтения
+              каждого клиента, будут способствовать налаживанию тесной связи
+              между вашим чат-ботом и аудиторией, делая взаимодействие более
+              содержательным и результативным.
+            </p>
+          </li>
+          <li class="section__item section__item--secrets">
+            <h3
+              class="section__title section__title--secondary section__title--margin section__title--violet"
+            >
+              Продвижение чат-бот в Viber 
+            </h3>
+            <p class="section__text">
+              После верификации чат-бот можно найти через поиск, набрав название
+              вашей компании на экране чатов. Прямая ссылка на бот в ваших
+              социальных сетях или на сайте, а также использование рекламы
+              помогут привлечь новых подписчиков.
+            </p>
+          </li>
+          <li class="section__item section__item--secrets">
+            <h3
+              class="section__title section__title--secondary section__title--margin section__title--violet"
+            >
+              Оптимизация воронок продаж 
+            </h3>
+            <p class="section__text">
+              Создание эффективных воронок продаж в чат-ботах поможет
+              стимулировать покупки и увеличивать конверсию, превращая каждое
+              взаимодействие пользователя с чат-ботом в сделку.
+            </p>
+          </li>
+          <li class="section__item section__item--secrets">
+            <h3
+              class="section__title section__title--secondary section__title--margin section__title--violet"
+            >
+              Поддержка различных медиаформатов 
+            </h3>
+            <p class="section__text">
+              Изображения, карточки, карусели, GIF-файлы и стикеры делают
+              общение более динамичным.
+            </p>
+          </li>
+          <li class="section__item section__item--secrets">
+            <h3
+              class="section__title section__title--secondary section__title--margin section__title--violet"
+            >
+              Многоязычность
+            </h3>
+            <p class="section__text">
+              Возможность работы на разных языках позволяет чат-боту достичь
+              широкой аудитории и удовлетворить потребности разнообразных
+              клиентов.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="faq section--gray" id="faq">
+        <h2 class="faq__title">FAQ</h2>
+        <ul class="faq__list">
+          <li class="faq__item faq__item--active">
+            <div class="faq__wrapper faq__wrapper--margin">
+              <h3 class="faq__title faq__title--secondary faq__title--margin">
+                1. Что такое чат-бот Viber и зачем он мне нужен?
+              </h3>
+              <img
+                id="up"
+                class="faq__img"
+                src="./images/svg/arrow-circle-down.svg"
+                alt="Arrow"
               />
               <img
-                src="./images/frames/phone-frame.png"
-                alt="Message with stripe"
+                id="down"
+                class="faq__img visually-hidden"
+                src="./images/svg/arrow-circle-down-transparent.svg"
+                alt="Arrow"
               />
-            </picture>
-          </div>
-        </li>
+            </div>
+            <p class="faq__text">
+              Чат-бот — это виртуальный помощник, который обеспечивает удобное
+              взаимодействие с пользователями в мессенджере Viber. Он помогает
+              автоматизировать рутинные задачи, сократить время ответа на
+              запросы клиентов и улучшить пользовательский опыт.
+            </p>
+          </li>
+        </ul>
+      </section>
 
-        <li class="section__item section__item--secrets">
-          <h3
-            class="section__title section__title--secondary section__title--margin section__title--violet"
-          >
-            Интеграция с CRM
-          </h3>
-          <p class="section__text">
-            Вы сможете собирать и анализировать информацию о клиентах, что даст
-            возможность сегментировать аудиторию и более точно настраивать
-            коммуникацию с каждой группой потенциальных клиентов.
-          </p>
-        </li>
-
-        <li class="section__item section__item--secrets">
-          <h3
-            class="section__title section__title--secondary section__title--margin section__title--violet"
-          >
-            Геймификация
-          </h3>
-          <p class="section__text">
-            Применение игровых механик превращает взаимодействие с вашей
-            компанией в увлекательный опыт. Это стимулирует пассивных
-            пользователей стать активными. Игровая механика с призами и бонусами
-            вдохновят клиентов на более частое взаимодействие с компанией.
-          </p>
-        </li>
-
-        <li class="section__item section__item--secrets">
-          <h3
-            class="section__title section__title--secondary section__title--margin section__title--violet"
-          >
-            Сегментация и персонализация 
-          </h3>
-          <p class="section__text">
-            Данные базы клиентов будут использованы для определения сегментов
-            аудитории и создания персонализированных сообщений или предложений.
-            Учитывание индивидуальных потребностей и предпочтений каждого
-            пользователя увеличит конверсию.
-          </p>
-        </li>
-
-        <li class="section__item section__item--secrets">
-          <h3
-            class="section__title section__title--secondary section__title--margin section__title--violet"
-          >
-            Глубока связь с аудиторией 
-          </h3>
-          <p class="section__text">
-            Персонализированные сообщения, адаптированные под предпочтения
-            каждого клиента, будут способствовать налаживанию тесной связи между
-            вашим чат-ботом и аудиторией, делая взаимодействие более
-            содержательным и результативным.
-          </p>
-        </li>
-        <li class="section__item section__item--secrets">
-          <h3
-            class="section__title section__title--secondary section__title--margin section__title--violet"
-          >
-            Продвижение чат-бот в Viber 
-          </h3>
-          <p class="section__text">
-            После верификации чат-бот можно найти через поиск, набрав название
-            вашей компании на экране чатов. Прямая ссылка на бот в ваших
-            социальных сетях или на сайте, а также использование рекламы помогут
-            привлечь новых подписчиков.
-          </p>
-        </li>
-        <li class="section__item section__item--secrets">
-          <h3
-            class="section__title section__title--secondary section__title--margin section__title--violet"
-          >
-            Оптимизация воронок продаж 
-          </h3>
-          <p class="section__text">
-            Создание эффективных воронок продаж в чат-ботах поможет
-            стимулировать покупки и увеличивать конверсию, превращая каждое
-            взаимодействие пользователя с чат-ботом в сделку.
-          </p>
-        </li>
-        <li class="section__item section__item--secrets">
-          <h3
-            class="section__title section__title--secondary section__title--margin section__title--violet"
-          >
-            Поддержка различных медиаформатов 
-          </h3>
-          <p class="section__text">
-            Изображения, карточки, карусели, GIF-файлы и стикеры делают общение
-            более динамичным.
-          </p>
-        </li>
-        <li class="section__item section__item--secrets">
-          <h3
-            class="section__title section__title--secondary section__title--margin section__title--violet"
-          >
-            Многоязычность
-          </h3>
-          <p class="section__text">
-            Возможность работы на разных языках позволяет чат-боту достичь
-            широкой аудитории и удовлетворить потребности разнообразных
-            клиентов.
-          </p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="faq section--gray" id="faq">
-      <h2 class="faq__title">FAQ</h2>
-      <ul class="faq__list">
-        <li class="faq__item faq__item--active">
-          <div class="faq__wrapper faq__wrapper--margin">
-            <h3 class="faq__title faq__title--secondary faq__title--margin">
-              1. Что такое чат-бот Viber и зачем он мне нужен?
-            </h3>
-            <img
-              id="up"
-              class="faq__img"
-              src="./images/svg/arrow-circle-down.svg"
-              alt="Arrow"
-            />
-            <img
-              id="down"
-              class="faq__img visually-hidden"
-              src="./images/svg/arrow-circle-down-transparent.svg"
-              alt="Arrow"
-            />
-          </div>
-          <p class="faq__text">
-            Чат-бот — это виртуальный помощник, который обеспечивает удобное
-            взаимодействие с пользователями в мессенджере Viber. Он помогает
-            автоматизировать рутинные задачи, сократить время ответа на запросы
-            клиентов и улучшить пользовательский опыт.
-          </p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="banner section">
-      <h2 class="banner__title">
-        Переведите ваш бизнес на новый уровень с официальным партнёром Viber.
-      </h2>
-      <h3 class="banner__title banner__title--secondary">
-        Начните прямо сейчас!
-      </h3>
-      <a
-        class="contact-button"
-        target="_blank"
-        href="https://console.smartsender.com"
-        >Начать</a
-      >
-    </section>
-
+      <section class="banner section">
+        <h2 class="banner__title">
+          Переведите ваш бизнес на новый уровень с официальным партнёром Viber.
+        </h2>
+        <h3 class="banner__title banner__title--secondary">
+          Начните прямо сейчас!
+        </h3>
+        <a
+          class="contact-button"
+          target="_blank"
+          href="https://console.smartsender.com"
+          >Начать</a
+        >
+      </section>
+    </div>
     <script type="module" src="./index.js"></script>
   </body>
 </html>

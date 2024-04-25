@@ -1,527 +1,530 @@
-.section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  flex-direction: column;
-  @media screen and (min-width: $laptop) {
-    flex-direction: row;
-  }
-  @media screen and (min-width: $desktop) {
-    padding-bottom: 130px;
-    padding-top: 100px;
-  }
-  @media screen and (min-width: $broad) {
-    justify-content: center;
-  }
-  &--gray {
-    background-color: $secondary-background;
-  }
-  &--padding {
-    padding-bottom: 0;
-    padding-top: 0;
-  }
-  &--reverse {
-    flex-direction: column-reverse;
+.viber-landing {
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    flex-direction: column;
+    background-color: $main-background;
     @media screen and (min-width: $laptop) {
       flex-direction: row;
     }
-  }
-  &__link {
-    font-weight: 700;
-    color: $link-color;
-    text-decoration: underline;
-  }
-  &__about {
-    position: relative;
-    margin-bottom: 70px;
-    padding: 42px 20px 100px 20px;
-    background-image: linear-gradient(
-      45deg,
-      $blue-violet-1-transparent 0%,
-      $blue-violet-2-transparent 25%,
-      $blue-violet-2-transparent 58%
-    );
-    @media screen and (min-width: $laptop) {
-      max-width: 700px;
-      padding: 42px 40px 42px 45px;
-      margin-right: 100px;
-      border-radius: 10px;
-      border: none;
-      margin-bottom: 0;
-    }
     @media screen and (min-width: $desktop) {
-      padding: 62px 60px 62px 65px;
-      margin-right: 140px;
-    }
-  }
-  &__bots {
-    padding-bottom: 30px;
-    padding-top: 60px;
-    @media screen and (min-width: $laptop) {
-      margin-right: 45px;
-      max-width: 540px;
-      padding-bottom: 50px;
-      padding-top: 50px;
-    }
-    @media screen and (min-width: $laptop-desktop) {
-      max-width: 640px;
-    }
-    @media screen and (min-width: $desktop) {
-      margin-right: 65px;
       padding-bottom: 130px;
       padding-top: 100px;
     }
-  }
-  &__limitations {
-    flex-direction: column;
-    align-items: flex-start;
-    padding-bottom: 100px;
-  }
-  &__opportunity {
-    flex-direction: column;
-    align-items: center;
-  }
-  &__steps {
-    margin-bottom: 30px;
-    @media screen and (min-width: $laptop) {
-      margin-bottom: 0;
-      max-width: 550px;
-    }
-    @media screen and (min-width: $laptop-desktop) {
-      max-width: 710px;
-    }
-  }
-
-  &__secrets {
-    padding-bottom: 100px;
-    @media screen and (min-width: $laptop) {
-      padding-bottom: 160px;
-    }
-  }
-  &__text {
-    color: $main-text;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 150%;
-
-    &--span {
-      font-weight: 700;
-    }
-    &--margin {
-      margin-bottom: 30px;
-    }
-    &--steps {
-      color: $main-text;
-      @media screen and (min-width: $laptop) {
-        color: $main-text-transparent;
-      }
-    }
-    &--limitations {
-      max-width: 670px;
-    }
-  }
-  &__img {
-    &--clients {
-      border: double 5px transparent;
-      border-radius: 50%;
-      background-image: linear-gradient($blue-violet-1, $blue-violet-2),
-        radial-gradient(circle at top left, $blue-violet-1, $blue-violet-2);
-      background-origin: border-box;
-      background-clip: padding-box, border-box;
-      box-shadow: 0 6px 6px $blue-violet-shadow;
-      overflow: hidden;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      @media screen and (max-width: 330px) {
-        width: 50px;
-        height: 50px;
-      }
-      @media screen and (min-width: $laptop) {
-        width: 70px;
-        height: 70px;
-      }
-      @media screen and (min-width: $desktop) {
-        width: 80px;
-        height: 80px;
-      }
-    }
-    &--viber {
-      position: absolute;
-      bottom: 15px;
-      right: 50%;
-      transform: translateX(50%) translateY(50%) rotate(15deg);
-      width: 100px;
-      height: 100px;
-      @media screen and (min-width: $laptop) {
-        top: 50px;
-        right: -50px;
-        width: 80px;
-        height: 80px;
-        transform: rotate(30deg);
-      }
-      @media screen and (min-width: $desktop) {
-        top: 60px;
-        right: -60px;
-        width: 100px;
-        height: 100px;
-      }
-    }
-    &--messenger {
-      max-width: 745px;
-    }
-    &--phone {
-      @media screen and (min-width: $laptop) {
-        max-width: 650px;
-        margin-right: 60px;
-        margin-bottom: -50px;
-      }
-      @media screen and (min-width: $desktop) {
-        margin-right: 100px;
-      }
-    }
-    &--calendar {
-      position: absolute;
-      top: -158px;
-      left: -266px;
-      width: 415px;
-      height: 300px;
-    }
-    &--calendar-down {
-      position: absolute;
-      top: -200px;
-      transform: translateX(-50%);
-      left: 50%;
-      width: 330px;
-      height: 245px;
-    }
-    &--limitations {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-      width: 80px;
-      height: 80px;
-    }
-    &--opportunity {
-      width: 60px;
-      height: 60px;
-      margin-bottom: 15px;
-    }
-    &--secrets {
-      position: absolute;
-      display: block;
-      width: 100%;
-      top: -50px;
-      right: -25px;
-      height: auto;
-      @media screen and (max-width: 330px) {
-        top: -40px;
-        right: -20px;
-      }
-      @media screen and (min-width: $phone) {
-        width: 330px;
-      }
-      @media screen and (min-width: $tablet) {
-        right: -45px;
-      }
-    }
-  }
-  &__clients {
-    padding: 0 25px 0 25px;
-    @media screen and (min-width: $laptop) {
-      padding: 0;
-      max-width: 500px;
-    }
-  }
-  &__title {
-    color: $main-text;
-    font-weight: 600;
-    line-height: 140%;
-    font-size: 28px;
-    margin-bottom: 30px;
-    @media screen and (max-width: 330px) {
-      font-size: 24px;
-    }
-    @media screen and (min-width: $phone) {
-      font-size: 32px;
-    }
-    @media screen and (min-width: $desktop) {
-      margin-bottom: 45px;
-    }
-    &--span {
-      font-weight: 700;
-      color: $span-text;
-    }
-    &--clients {
-      margin-bottom: 45px;
-
-      @media screen and (min-width: $laptop) {
-        margin-bottom: 20px;
-      }
-      @media screen and (min-width: $desktop) {
-        margin-bottom: 22px;
-      }
-    }
-    &--steps {
-      display: flex;
-      flex-direction: column;
-    }
-    &--limitations {
-      margin-bottom: 25px;
-      max-width: 650px;
-      padding: 0 25px;
-      @media screen and (min-width: $laptop) {
-        padding: 0;
-      }
-    }
-    &--secondary {
-      font-size: 24px;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-    &--opportunity {
-      margin-bottom: 60px;
-      text-align: center;
-      max-width: 650px;
-      @media screen and (min-width: $desktop) {
-        margin-bottom: 100px;
-      }
-    }
-    &--list {
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 150%;
-      margin-bottom: 16px;
-    }
-    &--margin {
-      margin-bottom: 20px;
-    }
-    &--semibold {
-      font-weight: 600;
-    }
-    &--secrets {
-      margin: 0;
-      max-width: 270px;
-      @media screen and (max-width: 330px) {
-        max-width: 200px;
-      }
-      @media screen and (min-width: $tablet) {
-        max-width: 320px;
-      }
-    }
-    &--violet {
-      color: $span-text;
-      @media screen and (min-width: $tablet) {
-        color: currentColor;
-      }
-    }
-  }
-  &__list {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    &--clients {
-      gap: 20px;
-      margin-top: 45px;
-      flex-direction: row;
+    @media screen and (min-width: $broad) {
       justify-content: center;
-      flex-wrap: wrap;
-      @media screen and (max-width: 330px) {
-        gap: 15px;
-      }
-      @media screen and (min-width: $phone) {
-        gap: 30px;
-        flex-wrap: nowrap;
-      }
-      @media screen and (min-width: $laptop) {
-        justify-content: flex-start;
-        margin-top: 20px;
-      }
-      @media screen and (min-width: $desktop) {
-        margin-top: 50px;
-      }
     }
-    &--steps {
-      gap: 5px;
-    }
-    &--limitations {
-      align-items: normal;
-      flex-direction: column;
-      gap: 65px;
-      padding: 0 25px;
-      @media screen and (min-width: $laptop) {
-        padding: 0;
-        flex-direction: row;
-        gap: 20px;
-      }
-    }
-    &--opportunity {
-      align-items: normal;
-      flex-direction: row;
-      gap: 22px;
-      flex-wrap: wrap;
-    }
-    &--secrets {
-      flex-wrap: wrap;
-      flex-direction: row;
-      align-items: normal;
-      row-gap: 60px;
-      column-gap: 40px;
-      @media screen and (min-width: $desktop) {
-        row-gap: 100px;
-        column-gap: 50px;
-      }
-    }
-  }
-  &__item {
-    &--clients {
-      width: calc((100% - 3 * 20px) / 4);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      @media screen and (max-width: 330px) {
-        width: calc((100% - 3 * 15px) / 4);
-      }
-      @media screen and (min-width: $phone) {
-        width: calc((100% - 3 * 30px) / 4);
-      }
-    }
-    &--steps {
-      position: relative;
-      width: 100%;
-      padding: 25px;
-      border-radius: 10px;
-      border: none;
+    &--gray {
       background-color: $secondary-background;
     }
-    &--active {
-      background-image: linear-gradient(
-        45deg,
-        $blue-violet-1-transparent 0%,
-        $blue-violet-2-transparent 25%,
-        $blue-violet-2-transparent 58%
-      );
+    &--padding {
+      padding-bottom: 0;
+      padding-top: 0;
     }
-    &--limitations {
-      position: relative;
-      width: 100%;
-      padding: 60px 20px 20px 20px;
-      border-radius: 10px;
-      border: none;
-      background-color: $main-background;
+    &--reverse {
+      flex-direction: column-reverse;
       @media screen and (min-width: $laptop) {
-        width: calc((100% - 2 * 20px) / 3);
-        padding: 60px 40px;
+        flex-direction: row;
       }
     }
-    &--opportunity {
-      width: 100%;
-      padding: 20px;
-      border-radius: 10px;
-      border: none;
+    &__link {
+      font-weight: 700;
+      color: $link-color;
+      text-decoration: underline;
+    }
+    &__about {
+      position: relative;
+      margin-bottom: 70px;
+      padding: 42px 20px 100px 20px;
       background-image: linear-gradient(
         45deg,
         $blue-violet-1-transparent 0%,
         $blue-violet-2-transparent 25%,
         $blue-violet-2-transparent 58%
       );
-      @media screen and (min-width: $phone) {
-        padding: 30px 40px;
-      }
-      @media screen and (min-width: $tablet) {
-        width: calc((100% - 22px) / 2);
-      }
-      @media screen and (min-width: $desktop) {
-        width: calc((100% - 3 * 22px) / 4);
-        padding: 30px;
-      }
-    }
-    &--secrets {
-      width: 100%;
-      &:first-child {
-        margin-bottom: 90px;
-        display: flex;
-        justify-content: center;
-        @media screen and (max-width: 330px) {
-          margin-bottom: 60px;
-        }
-        @media screen and (min-width: $laptop) {
-          margin-bottom: 0;
-        }
-      }
       @media screen and (min-width: $laptop) {
-        width: calc((100% - 2 * 50px) / 3);
-      }
-    }
-  }
-  &__icon {
-    position: absolute;
-    top: calc(50% + 4px);
-    left: -12px;
-    transform: translateY(-50%);
-    width: 28px;
-    height: 28px;
-    border-radius: 6px;
-    background-color: transparent;
-    background-image: url("../images/svg/point.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  &__wrapper {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 90px;
-    padding: 0 25px;
-    @media screen and (min-width: $laptop) {
-      padding: 0;
-    }
-    &--secrets {
-      position: relative;
-      width: 100%;
-      @media screen and (min-width: $phone) {
-        width: 320px;
-      }
-    }
-    &--calendar {
-      display: none;
-      position: relative;
-      max-width: 460px;
-      padding: 35px 20px 35px 30px;
-      border-radius: 10px;
-      border: none;
-      background-image: linear-gradient(
-        45deg,
-        $blue-violet-1-transparent 0%,
-        $blue-violet-2-transparent 25%,
-        $blue-violet-2-transparent 58%
-      );
-      @media screen and (min-width: $laptop-desktop) {
-        display: block;
-      }
-    }
-    &--calendar-down {
-      position: relative;
-      width: 100%;
-      margin-top: 210px;
-      padding: 35px 20px 35px 30px;
-      background-image: linear-gradient(
-        45deg,
-        $blue-violet-1-transparent 0%,
-        $blue-violet-2-transparent 25%,
-        $blue-violet-2-transparent 58%
-      );
-      display: block;
-      @media screen and (min-width: $laptop) {
+        max-width: 700px;
+        padding: 42px 40px 42px 45px;
+        margin-right: 100px;
         border-radius: 10px;
         border: none;
+        margin-bottom: 0;
+      }
+      @media screen and (min-width: $desktop) {
+        padding: 62px 60px 62px 65px;
+        margin-right: 140px;
+      }
+    }
+    &__bots {
+      padding-bottom: 30px;
+      padding-top: 60px;
+      @media screen and (min-width: $laptop) {
+        margin-right: 45px;
+        max-width: 540px;
+        padding-bottom: 50px;
+        padding-top: 50px;
       }
       @media screen and (min-width: $laptop-desktop) {
+        max-width: 640px;
+      }
+      @media screen and (min-width: $desktop) {
+        margin-right: 65px;
+        padding-bottom: 130px;
+        padding-top: 100px;
+      }
+    }
+    &__limitations {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-bottom: 100px;
+    }
+    &__opportunity {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__steps {
+      margin-bottom: 30px;
+      @media screen and (min-width: $laptop) {
+        margin-bottom: 0;
+        max-width: 550px;
+      }
+      @media screen and (min-width: $laptop-desktop) {
+        max-width: 710px;
+      }
+    }
+
+    &__secrets {
+      padding-bottom: 100px;
+      @media screen and (min-width: $laptop) {
+        padding-bottom: 160px;
+      }
+    }
+    &__text {
+      color: $main-text;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+
+      &--span {
+        font-weight: 700;
+      }
+      &--margin {
+        margin-bottom: 30px;
+      }
+      &--steps {
+        color: $main-text;
+        @media screen and (min-width: $laptop) {
+          color: $main-text-transparent;
+        }
+      }
+      &--limitations {
+        max-width: 670px;
+      }
+    }
+    &__img {
+      &--clients {
+        border: double 5px transparent;
+        border-radius: 50%;
+        background-image: linear-gradient($blue-violet-1, $blue-violet-2),
+          radial-gradient(circle at top left, $blue-violet-1, $blue-violet-2);
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+        box-shadow: 0 6px 6px $blue-violet-shadow;
+        overflow: hidden;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        @media screen and (max-width: 330px) {
+          width: 50px;
+          height: 50px;
+        }
+        @media screen and (min-width: $laptop) {
+          width: 70px;
+          height: 70px;
+        }
+        @media screen and (min-width: $desktop) {
+          width: 80px;
+          height: 80px;
+        }
+      }
+      &--viber {
+        position: absolute;
+        bottom: 15px;
+        right: 50%;
+        transform: translateX(50%) translateY(50%) rotate(15deg);
+        width: 100px;
+        height: 100px;
+        @media screen and (min-width: $laptop) {
+          top: 50px;
+          right: -50px;
+          width: 80px;
+          height: 80px;
+          transform: rotate(30deg);
+        }
+        @media screen and (min-width: $desktop) {
+          top: 60px;
+          right: -60px;
+          width: 100px;
+          height: 100px;
+        }
+      }
+      &--messenger {
+        max-width: 745px;
+      }
+      &--phone {
+        @media screen and (min-width: $laptop) {
+          max-width: 650px;
+          margin-right: 60px;
+          margin-bottom: -50px;
+        }
+        @media screen and (min-width: $desktop) {
+          margin-right: 100px;
+        }
+      }
+      &--calendar {
+        position: absolute;
+        top: -158px;
+        left: -266px;
+        width: 415px;
+        height: 300px;
+      }
+      &--calendar-down {
+        position: absolute;
+        top: -200px;
+        transform: translateX(-50%);
+        left: 50%;
+        width: 330px;
+        height: 245px;
+      }
+      &--limitations {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 80px;
+        height: 80px;
+      }
+      &--opportunity {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+      }
+      &--secrets {
+        position: absolute;
+        display: block;
+        width: 100%;
+        top: -50px;
+        right: -25px;
+        height: auto;
+        @media screen and (max-width: 330px) {
+          top: -40px;
+          right: -20px;
+        }
+        @media screen and (min-width: $phone) {
+          width: 330px;
+        }
+        @media screen and (min-width: $tablet) {
+          right: -45px;
+        }
+      }
+    }
+    &__clients {
+      padding: 0 25px 0 25px;
+      @media screen and (min-width: $laptop) {
+        padding: 0;
+        max-width: 500px;
+      }
+    }
+    &__title {
+      color: $main-text;
+      font-weight: 600;
+      line-height: 140%;
+      font-size: 28px;
+      margin-bottom: 30px;
+      @media screen and (max-width: 330px) {
+        font-size: 24px;
+      }
+      @media screen and (min-width: $phone) {
+        font-size: 32px;
+      }
+      @media screen and (min-width: $desktop) {
+        margin-bottom: 45px;
+      }
+      &--span {
+        font-weight: 700;
+        color: $span-text;
+      }
+      &--clients {
+        margin-bottom: 45px;
+
+        @media screen and (min-width: $laptop) {
+          margin-bottom: 20px;
+        }
+        @media screen and (min-width: $desktop) {
+          margin-bottom: 22px;
+        }
+      }
+      &--steps {
+        display: flex;
+        flex-direction: column;
+      }
+      &--limitations {
+        margin-bottom: 25px;
+        max-width: 650px;
+        padding: 0 25px;
+        @media screen and (min-width: $laptop) {
+          padding: 0;
+        }
+      }
+      &--secondary {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      &--opportunity {
+        margin-bottom: 60px;
+        text-align: center;
+        max-width: 650px;
+        @media screen and (min-width: $desktop) {
+          margin-bottom: 100px;
+        }
+      }
+      &--list {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 150%;
+        margin-bottom: 16px;
+      }
+      &--margin {
+        margin-bottom: 20px;
+      }
+      &--semibold {
+        font-weight: 600;
+      }
+      &--secrets {
+        margin: 0;
+        max-width: 270px;
+        @media screen and (max-width: 330px) {
+          max-width: 200px;
+        }
+        @media screen and (min-width: $tablet) {
+          max-width: 320px;
+        }
+      }
+      &--violet {
+        color: $span-text;
+        @media screen and (min-width: $tablet) {
+          color: currentColor;
+        }
+      }
+    }
+    &__list {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      &--clients {
+        gap: 20px;
+        margin-top: 45px;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        @media screen and (max-width: 330px) {
+          gap: 15px;
+        }
+        @media screen and (min-width: $phone) {
+          gap: 30px;
+          flex-wrap: nowrap;
+        }
+        @media screen and (min-width: $laptop) {
+          justify-content: flex-start;
+          margin-top: 20px;
+        }
+        @media screen and (min-width: $desktop) {
+          margin-top: 50px;
+        }
+      }
+      &--steps {
+        gap: 5px;
+      }
+      &--limitations {
+        align-items: normal;
+        flex-direction: column;
+        gap: 65px;
+        padding: 0 25px;
+        @media screen and (min-width: $laptop) {
+          padding: 0;
+          flex-direction: row;
+          gap: 20px;
+        }
+      }
+      &--opportunity {
+        align-items: normal;
+        flex-direction: row;
+        gap: 22px;
+        flex-wrap: wrap;
+      }
+      &--secrets {
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: normal;
+        row-gap: 60px;
+        column-gap: 40px;
+        @media screen and (min-width: $desktop) {
+          row-gap: 100px;
+          column-gap: 50px;
+        }
+      }
+    }
+    &__item {
+      &--clients {
+        width: calc((100% - 3 * 20px) / 4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width: 330px) {
+          width: calc((100% - 3 * 15px) / 4);
+        }
+        @media screen and (min-width: $phone) {
+          width: calc((100% - 3 * 30px) / 4);
+        }
+      }
+      &--steps {
+        position: relative;
+        width: 100%;
+        padding: 25px;
+        border-radius: 10px;
+        border: none;
+        background-color: $secondary-background;
+      }
+      &--active {
+        background-image: linear-gradient(
+          45deg,
+          $blue-violet-1-transparent 0%,
+          $blue-violet-2-transparent 25%,
+          $blue-violet-2-transparent 58%
+        );
+      }
+      &--limitations {
+        position: relative;
+        width: 100%;
+        padding: 60px 20px 20px 20px;
+        border-radius: 10px;
+        border: none;
+        background-color: $main-background;
+        @media screen and (min-width: $laptop) {
+          width: calc((100% - 2 * 20px) / 3);
+          padding: 60px 40px;
+        }
+      }
+      &--opportunity {
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+        border: none;
+        background-image: linear-gradient(
+          45deg,
+          $blue-violet-1-transparent 0%,
+          $blue-violet-2-transparent 25%,
+          $blue-violet-2-transparent 58%
+        );
+        @media screen and (min-width: $phone) {
+          padding: 30px 40px;
+        }
+        @media screen and (min-width: $tablet) {
+          width: calc((100% - 22px) / 2);
+        }
+        @media screen and (min-width: $desktop) {
+          width: calc((100% - 3 * 22px) / 4);
+          padding: 30px;
+        }
+      }
+      &--secrets {
+        width: 100%;
+        &:first-child {
+          margin-bottom: 90px;
+          display: flex;
+          justify-content: center;
+          @media screen and (max-width: 330px) {
+            margin-bottom: 60px;
+          }
+          @media screen and (min-width: $laptop) {
+            margin-bottom: 0;
+          }
+        }
+        @media screen and (min-width: $laptop) {
+          width: calc((100% - 2 * 50px) / 3);
+        }
+      }
+    }
+    &__icon {
+      position: absolute;
+      top: calc(50% + 4px);
+      left: -12px;
+      transform: translateY(-50%);
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      background-color: transparent;
+      background-image: url("../images/svg/point.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &__wrapper {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 90px;
+      padding: 0 25px;
+      @media screen and (min-width: $laptop) {
+        padding: 0;
+      }
+      &--secrets {
+        position: relative;
+        width: 100%;
+        @media screen and (min-width: $phone) {
+          width: 320px;
+        }
+      }
+      &--calendar {
         display: none;
+        position: relative;
+        max-width: 460px;
+        padding: 35px 20px 35px 30px;
+        border-radius: 10px;
+        border: none;
+        background-image: linear-gradient(
+          45deg,
+          $blue-violet-1-transparent 0%,
+          $blue-violet-2-transparent 25%,
+          $blue-violet-2-transparent 58%
+        );
+        @media screen and (min-width: $laptop-desktop) {
+          display: block;
+        }
+      }
+      &--calendar-down {
+        position: relative;
+        width: 100%;
+        margin-top: 210px;
+        padding: 35px 20px 35px 30px;
+        background-image: linear-gradient(
+          45deg,
+          $blue-violet-1-transparent 0%,
+          $blue-violet-2-transparent 25%,
+          $blue-violet-2-transparent 58%
+        );
+        display: block;
+        @media screen and (min-width: $laptop) {
+          border-radius: 10px;
+          border: none;
+        }
+        @media screen and (min-width: $laptop-desktop) {
+          display: none;
+        }
       }
     }
   }
